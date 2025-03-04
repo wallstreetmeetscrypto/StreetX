@@ -19,4 +19,26 @@ const socialLink = [
 ]
 
 
-export { socialLink }
+const tradingSteps = [
+  {
+    id:1,
+    name:"Trade and Profit",
+    desc:"Speculate on price movements and grow your portfolio",
+    icon: Icons.Trade
+  },
+  {
+    id:2,
+    name:"Connect Wallet",
+    desc:"Connect with Phantom, Solflare, or Backpack to start your journey",
+    icon: Icons.Wallet
+  },
+  {
+    id:3,
+    name:"Mint or buy and ICO",
+    desc:"Choose from trending projects or create your own ICO",
+    icon: Icons.Buy
+  },
+]
+
+
+export { socialLink, tradingSteps }

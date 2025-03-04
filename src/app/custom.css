@@ -1,6 +1,9 @@
 @theme {
-  --color-cold-100: #EADFB1;
+  --color-gold-100: #EADFB1;
   --color-gold-200: #9F8641;
+  --color-gold-300: #B79B4E;
 
+  --color-dark-50: #9CA3AF;
   --color-dark-300: #151515;
+  --color-dark-200: #1F1F20;
 }
