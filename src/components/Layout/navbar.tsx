@@ -68,7 +68,7 @@ const Navbar = () => {
             <Icons.Hamburger />
           </div>
           <Link href="/" className="md:text-xl text-lg font-bold">
-            <Image src="/logo.webp" alt="logo" width={windowSize.width > 1024 ? 70 : 40} height={windowSize.width > 1024 ? 70 : 40} />
+            <Image src="/wse-logo.webp" alt="logo" width={windowSize.width > 1024 ? 70 : 40} height={windowSize.width > 1024 ? 70 : 40} />
           </Link>
         </div>
 
