@@ -17,7 +17,7 @@ const HeroSecion = () => {
 
   return (
     rendered ? <section className={`w-full flex flex-col items-center justify-center relative bg-transparent`}>
-      {/* <div className="w-full">
+      <div className="w-full">
         <TickerTape
           colorTheme="dark"
           isTransparent
@@ -48,7 +48,7 @@ const HeroSecion = () => {
             },
           ]}
         />
-      </div> */}
+      </div>
       <div className={`${Custom.section}`}>
         <Navbar />
         <div className="flex items-center flex-col gap-8 py-11">
