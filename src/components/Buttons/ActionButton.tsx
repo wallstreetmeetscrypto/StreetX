@@ -15,8 +15,8 @@ const ActionButton = ({ name, onClick, className }: ActionButtonProps) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       onClick={onClick}
-      className={`${className} flex items-center rounded-4xl bg-gradient-to-b from-gold-100 to-gold-300 text-dark-300 p-2 gap-2 shadow-gold-200 shadow-lg`}>
-      <p className="font-bold pl-2">{name}</p>
+      className={`${className} cursor-pointer z-10 flex items-center rounded-4xl bg-gradient-to-b from-gold-100 to-gold-300 text-dark-300 p-2 gap-2 shadow-gold-200 shadow-lg`}>
+      <p className="font-bold pl-3">{name}</p>
       <Icons.ArrowRight />
     </motion.button>
   )

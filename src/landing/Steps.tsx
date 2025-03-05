@@ -14,7 +14,7 @@ const Steps = () => {
     <section className={`${Custom.section} flex flex-col items-center justify-center relative md:py-[100px] lg:py-[200px]`}>
       <div className="text-center flex flex-col gap-6">
         <h3 className="font-bold text-3xl sm:text-4xl lg:text-5xl">Start Trading in <span className="bg-gradient-to-r from-gold-100 via-gold-300 to-gold-100 bg-clip-text text-transparent">3 Simple Steps</span></h3>
-        <p className="text-dark-50 text-sm md:text-base">Unlock the Full Potential of WSE: Follow These 3 Simple Steps to Start Trading, Maximize Your Profits, and Elevate Your Investment Game Effortlessly!</p>
+        <p className="text-dark-50 text-sm md:text-base max-w-3xl">Unlock the Full Potential of WSE: Follow These 3 Simple Steps to Start Trading, Maximize Your Profits, and Elevate Your Investment Game Effortlessly!</p>
       </div>
       <div className="absolute bg-radial from-gold-200/25 to-65% to-transparent rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px]">
       </div>
