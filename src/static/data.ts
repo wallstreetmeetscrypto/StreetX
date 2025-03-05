@@ -24,19 +24,19 @@ const tradingSteps = [
     id: 1,
     name: "Trade and Profit",
     desc: "Speculate on price movements and grow your portfolio",
-    icon: Icons.Assets
+    icon: Icons.Trade
   },
   {
     id: 2,
     name: "Connect Wallet",
     desc: "Connect with Phantom, Solflare, or Backpack to start your journey",
-    icon: Icons.PriceUp
+    icon: Icons.Wallet
   },
   {
     id: 3,
     name: "Mint or buy and ICO",
     desc: "Choose from trending projects or create your own ICO",
-    icon: Icons.Reward
+    icon: Icons.Buy
   },
 ]
 
@@ -75,20 +75,38 @@ const markets = [
 
 const trades = [
   {
-    name: "Price Grows with Demand",
-    desc: "",
+    name: "Trade Unique Assets",
+    desc: "Access exclusive markets for people, brands, and teams",
     icon: Icons.Assets
   },
   {
-    name: "Price Grows with Demandd",
-    desc: "",
+    name: "Price Grows with Demand",
+    desc: "Benefit from our innovative bonding curve model",
     icon: Icons.PriceUp
   },
   {
-    name: "",
+    name: "Earn from Market Incentives",
     desc: "Receive rewards for providing market liquidity",
     icon: Icons.Reward
   },
-
 ]
-export { socialLink, tradingSteps, markets }
+
+
+const howtoTrading = [
+  {
+    icon:Icons.TradingMint,
+    name:"Mint & List",
+    desc:"Select a brand or team to mint as a digital asset and list it on the WSE marketplace"
+  },
+  {
+    icon:Icons.TradingProfit,
+    name:"Speculate & Profit",
+    desc:"Buy assets you believe will increase in value and sell them for profit"
+  },
+  {
+    icon:Icons.TradingMarketMaking,
+    name:"Market-Making",
+    desc:"Earn rewards by providing liquidity and maintaining active markets"
+  },
+]
+export { socialLink, tradingSteps, markets, trades, howtoTrading }

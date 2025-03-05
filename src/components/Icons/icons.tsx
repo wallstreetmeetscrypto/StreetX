@@ -154,5 +154,31 @@ export const Icons = {
       </defs>
     </svg>
   ),
+  TradingMint: ({ size = 56, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width={size} height={size} rx="28" fill="#D4AF37" fillOpacity="0.1" />
+      <path d="M24 30C27.3137 30 30 27.3137 30 24C30 20.6863 27.3137 18 24 18C20.6863 18 18 20.6863 18 24C18 27.3137 20.6863 30 24 30Z" stroke="#EADFB1" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M34.09 26.3701C35.0353 26.7225 35.8765 27.3076 36.5357 28.0713C37.195 28.835 37.6511 29.7526 37.8617 30.7392C38.0724 31.7258 38.0309 32.7496 37.741 33.716C37.4512 34.6823 36.9223 35.5599 36.2034 36.2677C35.4845 36.9755 34.5987 37.4906 33.628 37.7653C32.6572 38.0401 31.6329 38.0656 30.6497 37.8396C29.6665 37.6135 28.7561 37.1432 28.0028 36.4721C27.2495 35.801 26.6776 34.9508 26.34 34.0001" stroke="#EADFB1" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M23 22H24V26" stroke="#EADFB1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M32.71 29.8799L33.41 30.5899L30.59 33.4099" stroke="#EADFB1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
+  TradingProfit: ({ size = 56, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width={size} height={size} rx="28" fill="#D4AF37" fillOpacity="0.1" />
+      <path d="M38 23L29.5 31.5L24.5 26.5L18 33" stroke="#EADFB1" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M32 23H38V29" stroke="#EADFB1" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
+  TradingMarketMaking: ({ size = 56, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width={size} height={size} rx="28" fill="#D4AF37" fillOpacity="0.1" />
+      <path d="M32 37V35C32 33.9391 31.5786 32.9217 30.8284 32.1716C30.0783 31.4214 29.0609 31 28 31H22C20.9391 31 19.9217 31.4214 19.1716 32.1716C18.4214 32.9217 18 33.9391 18 35V37" stroke="#EADFB1" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M25 27C27.2091 27 29 25.2091 29 23C29 20.7909 27.2091 19 25 19C22.7909 19 21 20.7909 21 23C21 25.2091 22.7909 27 25 27Z" stroke="#EADFB1" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M38 36.9999V34.9999C37.9993 34.1136 37.7044 33.2527 37.1614 32.5522C36.6184 31.8517 35.8581 31.3515 35 31.1299" stroke="#EADFB1" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M32 19.1299C32.8604 19.3502 33.623 19.8506 34.1676 20.5522C34.7122 21.2538 35.0078 22.1167 35.0078 23.0049C35.0078 23.8931 34.7122 24.756 34.1676 25.4576C33.623 26.1592 32.8604 26.6596 32 26.8799" stroke="#EADFB1" stroke-width="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
+
 }
 
