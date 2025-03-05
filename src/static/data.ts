@@ -1,4 +1,5 @@
 import { Icons } from "@/components/Icons/icons";
+import { symbol } from "framer-motion/client";
 
 const socialLink = [
   {
@@ -94,19 +95,54 @@ const trades = [
 
 const howtoTrading = [
   {
-    icon:Icons.TradingMint,
-    name:"Mint & List",
-    desc:"Select a brand or team to mint as a digital asset and list it on the WSE marketplace"
+    icon: Icons.TradingMint,
+    name: "Mint & List",
+    desc: "Select a brand or team to mint as a digital asset and list it on the WSE marketplace"
   },
   {
-    icon:Icons.TradingProfit,
-    name:"Speculate & Profit",
-    desc:"Buy assets you believe will increase in value and sell them for profit"
+    icon: Icons.TradingProfit,
+    name: "Speculate & Profit",
+    desc: "Buy assets you believe will increase in value and sell them for profit"
   },
   {
-    icon:Icons.TradingMarketMaking,
-    name:"Market-Making",
-    desc:"Earn rewards by providing liquidity and maintaining active markets"
+    icon: Icons.TradingMarketMaking,
+    name: "Market-Making",
+    desc: "Earn rewards by providing liquidity and maintaining active markets"
   },
 ]
-export { socialLink, tradingSteps, markets, trades, howtoTrading }
+
+const tokenList = [
+  {
+    name: "Donald Trump",
+    symbol: "TRUMP",
+    price: 2.25,
+    volume: 1.25,
+    change: 12,
+    marketcap: 2.45
+  },
+  {
+    name: "Erling Haaland",
+    symbol: "ERLING",
+    price: 1.85,
+    volume: 0.85,
+    change: -3.2,
+    marketcap: 1.85
+  },
+  {
+    name: "LeBron James",
+    symbol: "JAMES",
+    price: 3.20,
+    volume: 1.25,
+    change: 12,
+    marketcap: 2.45
+  },
+  {
+    name: "Vladimir Putin",
+    symbol: "PUTIN",
+    price: 1.95,
+    volume: 0.95,
+    change: 12,
+    marketcap: 1.95
+  },
+]
+export { socialLink, tradingSteps, markets, trades, howtoTrading, tokenList }

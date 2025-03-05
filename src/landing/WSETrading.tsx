@@ -18,7 +18,7 @@ const WSETrading = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         <div className="flex flex-col justify-center items-start gap-8">
           {howtoTrading.map((item) => (
-            <div className="flex gap-4">
+            <div className="flex gap-4" key={item.name}>
               <item.icon />
               <div className="flex flex-col gap-2">
                 <h4 className="text-xl font-semibold text-white text-start">{item.name}</h4>
