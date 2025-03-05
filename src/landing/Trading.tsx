@@ -9,7 +9,7 @@ import Image from "next/image";
 const Trading = () => {
 
   return (
-    <section className={`${Custom.section} flex flex-col items-center justify-center relative md:py-[100px] lg:py-[200px]`}>
+    <section className={`${Custom.section} flex flex-col items-center justify-center relative md:py-[100px]`}>
       <div className="text-center flex flex-col gap-6">
         <h3 className="font-bold text-3xl sm:text-4xl lg:text-5xl">The Next Evolution in <span className={Custom.goldgradient}>Speculative Trading</span></h3>
         <p className="text-dark-50 text-sm md:text-base text-center">Trade assets beyond crypto. A scarcity-driven model designed for traders and speculators.</p>
