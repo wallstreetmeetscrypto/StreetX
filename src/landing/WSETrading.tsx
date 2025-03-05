@@ -12,7 +12,7 @@ const WSETrading = () => {
   return (
     <section className={`${Custom.section} flex flex-col items-center justify-center relative gap-12`}>
       <div className="text-center flex flex-col gap-6">
-        <h3 className="font-bold text-3xl sm:text-4xl lg:text-5xl">How Trading Works on<span className="bg-gradient-to-r from-gold-100 via-gold-300 to-gold-100 bg-clip-text text-transparent">WSE</span></h3>
+        <h3 className="font-bold text-3xl sm:text-4xl lg:text-5xl">How Trading Works on <span className="bg-gradient-to-r from-gold-100 via-gold-300 to-gold-100 bg-clip-text text-transparent">WSE</span></h3>
         <p className={`${Custom.desc}`}>Start your trading journey in three simple steps and become part of the next generation of digital asset trading.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">

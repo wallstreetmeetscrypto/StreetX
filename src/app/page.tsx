@@ -1,14 +1,17 @@
+import BackgroundImage from "@/components/BackgroundImage";
 import About from "@/landing/About";
 import BondingCurve from "@/landing/BondingCurve";
+import HeroSecion from "@/landing/Hero";
 import Phenomenon from "@/landing/Phenomenon";
 import Steps from "@/landing/Steps";
 import Trading from "@/landing/Trading";
 import WSETrading from "@/landing/WSETrading";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <>
+      <BackgroundImage />
+      <HeroSecion />
       <Phenomenon />
       <WSETrading />
       <BondingCurve />

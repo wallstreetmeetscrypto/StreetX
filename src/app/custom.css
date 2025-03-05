@@ -9,3 +9,8 @@
 
   --color-white-900: '#FAFAFA'
 }
+
+.tradingview-widget-copyright,
+.js-copyright-label {
+  display: none !important;
+}
