@@ -7,6 +7,7 @@ import { Label } from "@/components/Labels/base"
 import { Custom } from "@/styles/custom"
 import { useState } from "react"
 import TradingViewWidget from "./tradingview"
+import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets"
 
 
 const tabList = [
@@ -112,7 +113,10 @@ const DashboardPage = () => {
               </div>
             </div>
 
-            <TradingViewWidget />
+            <AdvancedRealTimeChart
+              theme="dark"
+              height={500}
+              width={"100%"} />
 
             <div className="flex flex-col md:flex-row w-full gap-4">
               <div className="rounded-3xl bg-dark-200 p-6 basis-1/2 ">
