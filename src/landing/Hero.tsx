@@ -17,40 +17,7 @@ const HeroSecion = () => {
 
   return (
     rendered ? <section className={`w-full flex flex-col items-center justify-center relative bg-transparent`}>
-      <div className="w-full">
-        <TickerTape
-          colorTheme="dark"
-          isTransparent
-          symbols={[
-            {
-              proName: "BITSTAMP:SOLUSD",
-              title: "SOL/USD",
-            },
-            {
-              proName: "BITSTAMP:BTCUSD",
-              title: "BTC/USD",
-            },
-            {
-              proName: "BITSTAMP:ETHUSD",
-              title: "ETH/USD",
-            },
-            {
-              proName: "BITSTAMP:JUPUSD",
-              title: "JUP/USD",
-            },
-            {
-              proName: "BITSTAMP:MEWUSD",
-              title: "MEW/USD",
-            },
-            {
-              proName: "BITSTAMP:USDCUSD",
-              title: "USDC/USD",
-            },
-          ]}
-        />
-      </div>
       <div className={`${Custom.section}`}>
-        <Navbar />
         <div className="flex items-center flex-col gap-8 py-11">
           <div className="rounded-2xl px-4 py-1 border border-dark-50/50">
             <p className={`${Custom.goldgradient}`}>The Future of Trading</p>

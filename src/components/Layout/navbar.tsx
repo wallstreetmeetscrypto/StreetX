@@ -8,6 +8,8 @@ import WalletConnectButton from "../Buttons/WalletConnect";
 import NormalButton from "../Buttons/Normal";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import { IoIosClose } from "react-icons/io";
+import { TickerTape } from "react-ts-tradingview-widgets";
+import { Custom } from "@/styles/custom";
 
 const menuList = [
   {
@@ -17,7 +19,7 @@ const menuList = [
   },
   {
     name: "Trading Dashboard",
-    link: "/",
+    link: "/dashboard",
     icon: Icons.MenuDashboard
   },
   {
@@ -59,30 +61,62 @@ const Navbar = () => {
 
   return (
     rendered ? <motion.header
-      className="w-full"
+      className="w-full flex flex-col items-center"
     >
-      <div className="flex items-center space-x-1 justify-between gap-8 xl:gap-12">
-
-        <div className="flex gap-2 items-center">
-          <div className="flex lg:hidden" onClick={() => setIsMobileMenuOpen(true)}>
-            <Icons.Hamburger />
-          </div>
-          <Link href="/" className="md:text-xl text-lg font-bold">
-            <Image src="/wse-logo.webp" alt="logo" width={windowSize.width > 1024 ? 70 : 40} height={windowSize.width > 1024 ? 70 : 40} />
-          </Link>
-        </div>
-
-        <ul className="lg:flex gap-4 xl:gap-8 hidden">
-          {menuList.map((menu) => (
-            <Link href={menu.link} className="flex gap-2 items-center" key={menu.name}>
-              <menu.icon />
-              <p>{menu.name}</p>
+      <div className="w-full">
+        <TickerTape
+          colorTheme="dark"
+          isTransparent
+          symbols={[
+            {
+              proName: "BITSTAMP:SOLUSD",
+              title: "SOL/USD",
+            },
+            {
+              proName: "BITSTAMP:BTCUSD",
+              title: "BTC/USD",
+            },
+            {
+              proName: "BITSTAMP:ETHUSD",
+              title: "ETH/USD",
+            },
+            {
+              proName: "BITSTAMP:JUPUSD",
+              title: "JUP/USD",
+            },
+            {
+              proName: "BITSTAMP:MEWUSD",
+              title: "MEW/USD",
+            },
+            {
+              proName: "BITSTAMP:USDCUSD",
+              title: "USDC/USD",
+            },
+          ]}
+        />
+      </div>
+      <div className={`${Custom.section} w-full lg:w-auto`}>
+        <div className=" flex items-center space-x-1 justify-between gap-8 xl:gap-12 ">
+          <div className="flex gap-2 items-center">
+            <div className="flex lg:hidden" onClick={() => setIsMobileMenuOpen(true)}>
+              <Icons.Hamburger />
+            </div>
+            <Link href="/" className="md:text-xl text-lg font-bold">
+              <Image src="/wse-logo.webp" alt="logo" width={windowSize.width > 1024 ? 70 : 40} height={windowSize.width > 1024 ? 70 : 40} />
             </Link>
-          ))}
-        </ul>
+          </div>
 
-        {/* <WalletConnectButton /> */}
-        <NormalButton name="Mint Your First ICO" />
+          <ul className="lg:flex gap-4 xl:gap-8 hidden">
+            {menuList.map((menu) => (
+              <Link href={menu.link} className="flex gap-2 items-center" key={menu.name}>
+                <menu.icon />
+                <p>{menu.name}</p>
+              </Link>
+            ))}
+          </ul>
+          {/* <WalletConnectButton /> */}
+          <NormalButton name="Mint Your First ICO" />
+        </div>
       </div>
       {isMobileMenuOpen && (
         <MobileMenu
