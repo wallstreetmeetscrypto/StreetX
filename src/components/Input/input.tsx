@@ -1,3 +1,4 @@
+'use client'
 import { Custom } from "@/styles/custom";
 
 interface InputProps {

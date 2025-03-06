@@ -24,7 +24,7 @@ const menuList = [
   },
   {
     name: "Mint",
-    link: "/",
+    link: "/mint",
     icon: Icons.MenuMint
   },
   {
