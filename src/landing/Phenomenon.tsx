@@ -41,9 +41,9 @@ const TokenCard = ({ item, className }: { item: TokenCardProps, className?: stri
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`rounded-xl flex flex-col w-full items-center text-center relative ${className}`}
+      className={`rounded-xl flex flex-col w-full items-center text-center relative ${className} `}
     >
-      <div className="bg-dark-200 rounded-xl w-full h-full gp-5 p-6 flex flex-col gap-4 inset-shadow-sm  inset-shadow-gold-300/50 ">
+      <div className="bg-dark-200 rounded-xl w-full h-full gp-5 p-6 flex flex-col gap-4 inset-shadow-sm cursor-pointer hover:inset-shadow-gold-300/50 ">
         <div className="flex justify-between gap-4">
           <div className="flex flex-col">
             <h4 className="text-xl text-start">{item.name}</h4>

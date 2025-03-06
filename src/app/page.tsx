@@ -10,7 +10,7 @@ import WSETrading from "@/landing/WSETrading";
 export default function Home() {
   return (
     <>
-      <BackgroundImage />
+      <BackgroundImage className="fixed "/>
       <HeroSecion />
       <Phenomenon />
       <WSETrading />

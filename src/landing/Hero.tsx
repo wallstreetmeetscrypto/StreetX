@@ -57,7 +57,7 @@ const HeroSecion = () => {
           </div>
           <h2 className={`${Custom.goldgradient} text-3xl xl:text-5xl font-bold max-w-3xl text-center leading-12 xl:leading-16`}>Trade People, Teams & Brands Like Stocks—Only on WSE</h2>
           <p className={`${Custom.desc} text-center max-w-2xl text-3xl`}>The first platform where you can mint, trade, and speculate on real-world names, brands, andentities—all powered by blockchain.</p>
-          <div className="flex gap-4 mt-2">
+          <div className="flex gap-4 mt-2 flex-col sm:flex-row">
             <ActionButton name="Start Trading" />
             <NormalButton name="Mint Your First ICO" />
           </div>
