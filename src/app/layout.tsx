@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <Providers>
           <Layout>
-            <BackgroundImage className="fixed " />
+            <BackgroundImage className="fixed -z-50 top-0" />
             {children}
           </Layout>
         </Providers>

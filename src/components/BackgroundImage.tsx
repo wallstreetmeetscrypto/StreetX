@@ -15,7 +15,7 @@ const BackgroundImage: FC<BackgroundImageProps> = ({
   height = 300,
   className = ""
 }) => (
-  <div className={`absolute top-0 left-0 ${className}`}>
+  <div className={`top-0 left-0 ${className}`}>
     <Image src={background || "/img/frame.png"} alt="Background" width={width} height={height} priority />
   </div>
 );

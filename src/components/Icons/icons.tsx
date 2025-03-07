@@ -196,38 +196,38 @@ export const Icons = {
   ),
   MenuHome: ({ size = 17, ...props }: IconProps) => (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10.5 14.5V9.16667C10.5 8.98986 10.4298 8.82029 10.3047 8.69526C10.1797 8.57024 10.0101 8.5 9.83333 8.5H7.16667C6.98986 8.5 6.82029 8.57024 6.69526 8.69526C6.57024 8.82029 6.5 8.98986 6.5 9.16667V14.5" stroke="#EADFB1" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M2.5 7.16697C2.49995 6.97302 2.54222 6.78139 2.62386 6.60545C2.70549 6.42951 2.82453 6.2735 2.97267 6.1483L7.63933 2.14897C7.87999 1.94558 8.1849 1.83398 8.5 1.83398C8.8151 1.83398 9.12001 1.94558 9.36067 2.14897L14.0273 6.1483C14.1755 6.2735 14.2945 6.42951 14.3761 6.60545C14.4578 6.78139 14.5 6.97302 14.5 7.16697V13.167C14.5 13.5206 14.3595 13.8597 14.1095 14.1098C13.8594 14.3598 13.5203 14.5003 13.1667 14.5003H3.83333C3.47971 14.5003 3.14057 14.3598 2.89052 14.1098C2.64048 13.8597 2.5 13.5206 2.5 13.167V7.16697Z" stroke="#EADFB1" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M10.5 14.5V9.16667C10.5 8.98986 10.4298 8.82029 10.3047 8.69526C10.1797 8.57024 10.0101 8.5 9.83333 8.5H7.16667C6.98986 8.5 6.82029 8.57024 6.69526 8.69526C6.57024 8.82029 6.5 8.98986 6.5 9.16667V14.5" stroke="#EADFB1" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M2.5 7.16697C2.49995 6.97302 2.54222 6.78139 2.62386 6.60545C2.70549 6.42951 2.82453 6.2735 2.97267 6.1483L7.63933 2.14897C7.87999 1.94558 8.1849 1.83398 8.5 1.83398C8.8151 1.83398 9.12001 1.94558 9.36067 2.14897L14.0273 6.1483C14.1755 6.2735 14.2945 6.42951 14.3761 6.60545C14.4578 6.78139 14.5 6.97302 14.5 7.16697V13.167C14.5 13.5206 14.3595 13.8597 14.1095 14.1098C13.8594 14.3598 13.5203 14.5003 13.1667 14.5003H3.83333C3.47971 14.5003 3.14057 14.3598 2.89052 14.1098C2.64048 13.8597 2.5 13.5206 2.5 13.167V7.16697Z" stroke="#EADFB1" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
   MenuDashboard: ({ size = 17, ...props }: IconProps) => (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M2.5 2.5V13.1667C2.5 13.5203 2.64048 13.8594 2.89052 14.1095C3.14057 14.3595 3.47971 14.5 3.83333 14.5H14.5" stroke="#FAFAFA" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M13.168 6.5L9.83464 9.83333L7.16797 7.16667L5.16797 9.16667" stroke="#FAFAFA" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M2.5 2.5V13.1667C2.5 13.5203 2.64048 13.8594 2.89052 14.1095C3.14057 14.3595 3.47971 14.5 3.83333 14.5H14.5" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M13.168 6.5L9.83464 9.83333L7.16797 7.16667L5.16797 9.16667" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 
   ),
   MenuMint: ({ size = 17, ...props }: IconProps) => (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M5.83203 9.83398C8.04117 9.83398 9.83203 8.04312 9.83203 5.83398C9.83203 3.62485 8.04117 1.83398 5.83203 1.83398C3.62289 1.83398 1.83203 3.62485 1.83203 5.83398C1.83203 8.04312 3.62289 9.83398 5.83203 9.83398Z" stroke="#FAFAFA" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M12.5592 7.41406C13.1895 7.64901 13.7502 8.03908 14.1897 8.54819C14.6293 9.05731 14.9333 9.66902 15.0737 10.3268C15.2142 10.9845 15.1865 11.6671 14.9933 12.3113C14.8 12.9555 14.4475 13.5406 13.9682 14.0125C13.4889 14.4843 12.8984 14.8277 12.2512 15.0109C11.6041 15.194 10.9212 15.2111 10.2657 15.0604C9.61022 14.9097 9.00332 14.5961 8.50113 14.1487C7.99894 13.7013 7.61767 13.1345 7.39258 12.5007" stroke="#FAFAFA" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M5.16797 4.5H5.83464V7.16667" stroke="#FAFAFA" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M11.6399 9.75293L12.1066 10.2263L10.2266 12.1063" stroke="#FAFAFA" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M5.83203 9.83398C8.04117 9.83398 9.83203 8.04312 9.83203 5.83398C9.83203 3.62485 8.04117 1.83398 5.83203 1.83398C3.62289 1.83398 1.83203 3.62485 1.83203 5.83398C1.83203 8.04312 3.62289 9.83398 5.83203 9.83398Z" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12.5592 7.41406C13.1895 7.64901 13.7502 8.03908 14.1897 8.54819C14.6293 9.05731 14.9333 9.66902 15.0737 10.3268C15.2142 10.9845 15.1865 11.6671 14.9933 12.3113C14.8 12.9555 14.4475 13.5406 13.9682 14.0125C13.4889 14.4843 12.8984 14.8277 12.2512 15.0109C11.6041 15.194 10.9212 15.2111 10.2657 15.0604C9.61022 14.9097 9.00332 14.5961 8.50113 14.1487C7.99894 13.7013 7.61767 13.1345 7.39258 12.5007" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M5.16797 4.5H5.83464V7.16667" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M11.6399 9.75293L12.1066 10.2263L10.2266 12.1063" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 
   ),
   MenuProfile: ({ size = 17, ...props }: IconProps) => (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M8.4987 15.1673C12.1806 15.1673 15.1654 12.1825 15.1654 8.50065C15.1654 4.81875 12.1806 1.83398 8.4987 1.83398C4.8168 1.83398 1.83203 4.81875 1.83203 8.50065C1.83203 12.1825 4.8168 15.1673 8.4987 15.1673Z" stroke="#FAFAFA" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M8.5 9.16699C9.60457 9.16699 10.5 8.27156 10.5 7.16699C10.5 6.06242 9.60457 5.16699 8.5 5.16699C7.39543 5.16699 6.5 6.06242 6.5 7.16699C6.5 8.27156 7.39543 9.16699 8.5 9.16699Z" stroke="#FAFAFA" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M5.16797 14.2753V13.1673C5.16797 12.8137 5.30844 12.4746 5.55849 12.2245C5.80854 11.9745 6.14768 11.834 6.5013 11.834H10.5013C10.8549 11.834 11.1941 11.9745 11.4441 12.2245C11.6942 12.4746 11.8346 12.8137 11.8346 13.1673V14.2753" stroke="#FAFAFA" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M8.4987 15.1673C12.1806 15.1673 15.1654 12.1825 15.1654 8.50065C15.1654 4.81875 12.1806 1.83398 8.4987 1.83398C4.8168 1.83398 1.83203 4.81875 1.83203 8.50065C1.83203 12.1825 4.8168 15.1673 8.4987 15.1673Z" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8.5 9.16699C9.60457 9.16699 10.5 8.27156 10.5 7.16699C10.5 6.06242 9.60457 5.16699 8.5 5.16699C7.39543 5.16699 6.5 6.06242 6.5 7.16699C6.5 8.27156 7.39543 9.16699 8.5 9.16699Z" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M5.16797 14.2753V13.1673C5.16797 12.8137 5.30844 12.4746 5.55849 12.2245C5.80854 11.9745 6.14768 11.834 6.5013 11.834H10.5013C10.8549 11.834 11.1941 11.9745 11.4441 12.2245C11.6942 12.4746 11.8346 12.8137 11.8346 13.1673V14.2753" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 
   ),
   MenuHelp: ({ size = 17, ...props }: IconProps) => (
     <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M8.4987 15.1673C12.1806 15.1673 15.1654 12.1825 15.1654 8.50065C15.1654 4.81875 12.1806 1.83398 8.4987 1.83398C4.8168 1.83398 1.83203 4.81875 1.83203 8.50065C1.83203 12.1825 4.8168 15.1673 8.4987 15.1673Z" stroke="#FAFAFA" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
-      <path d="M6.55859 6.50038C6.71533 6.05483 7.0247 5.67912 7.4319 5.4398C7.8391 5.20049 8.31786 5.11301 8.78338 5.19285C9.2489 5.2727 9.67114 5.51473 9.97531 5.87607C10.2795 6.2374 10.446 6.69473 10.4453 7.16705C10.4453 8.50038 8.44526 9.16705 8.44526 9.16705" stroke="#FAFAFA" strokeWidth="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M8.4987 15.1673C12.1806 15.1673 15.1654 12.1825 15.1654 8.50065C15.1654 4.81875 12.1806 1.83398 8.4987 1.83398C4.8168 1.83398 1.83203 4.81875 1.83203 8.50065C1.83203 12.1825 4.8168 15.1673 8.4987 15.1673Z" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M6.55859 6.50038C6.71533 6.05483 7.0247 5.67912 7.4319 5.4398C7.8391 5.20049 8.31786 5.11301 8.78338 5.19285C9.2489 5.2727 9.67114 5.51473 9.97531 5.87607C10.2795 6.2374 10.446 6.69473 10.4453 7.16705C10.4453 8.50038 8.44526 9.16705 8.44526 9.16705" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M8.5 11.833H8.50667" stroke="#FAFAFA" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
@@ -269,6 +269,22 @@ export const Icons = {
       </defs>
     </svg>
 
+  ),
+  TotalBalance: ({ size = 48, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width={size} height={size} rx="8" fill="#DFBF6F" fillOpacity="0.1" />
+      <path d="M31 19V16C31 15.7348 30.8946 15.4804 30.7071 15.2929C30.5196 15.1054 30.2652 15 30 15H17C16.4696 15 15.9609 15.2107 15.5858 15.5858C15.2107 15.9609 15 16.4696 15 17C15 17.5304 15.2107 18.0391 15.5858 18.4142C15.9609 18.7893 16.4696 19 17 19H32C32.2652 19 32.5196 19.1054 32.7071 19.2929C32.8946 19.4804 33 19.7348 33 20V24M33 24H30C29.4696 24 28.9609 24.2107 28.5858 24.5858C28.2107 24.9609 28 25.4696 28 26C28 26.5304 28.2107 27.0391 28.5858 27.4142C28.9609 27.7893 29.4696 28 30 28H33C33.2652 28 33.5196 27.8946 33.7071 27.7071C33.8946 27.5196 34 27.2652 34 27V25C34 24.7348 33.8946 24.4804 33.7071 24.2929C33.5196 24.1054 33.2652 24 33 24Z" stroke="#EADFB1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M15 17V31C15 31.5304 15.2107 32.0391 15.5858 32.4142C15.9609 32.7893 16.4696 33 17 33H32C32.2652 33 32.5196 32.8946 32.7071 32.7071C32.8946 32.5196 33 32.2652 33 32V28" stroke="#EADFB1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  ),
+  Profit: ({ size = 48, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width={size} height={size} rx="8" fill="#22C55E" fillOpacity="0.1" />
+      <path d="M15 15V31C15 31.5304 15.2107 32.0391 15.5858 32.4142C15.9609 32.7893 16.4696 33 17 33H33" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M30 29V21" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M25 29V17" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M20 29V26" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
   ),
 }
 
