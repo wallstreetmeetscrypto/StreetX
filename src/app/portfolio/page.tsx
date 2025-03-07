@@ -136,9 +136,7 @@ const Holders = () => {
     <div className="flex flex-col bg-dark-200 p-6 rounded-3xl">
       <div className="flex justify-between">
         <p className="text-2xl">Holdings</p>
-        <div>
-          <Button color="primary">Button</Button>
-        </div>
+
       </div>
       <div className="w-full">
         <Table aria-label="Example table with dynamic content">
