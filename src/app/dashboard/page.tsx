@@ -9,6 +9,7 @@ import { Custom } from "@/styles/custom"
 import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets"
+import { Select, SelectItem, Avatar } from "@heroui/react";
 
 
 const tabList = [
@@ -64,7 +65,7 @@ const DashboardPage = () => {
   }, [tabIndex])
 
   return (
-    <div className={`${Custom.section} xl:p-5 md:p-10 lg:p-12 p-5 md:mt-12 mt-[100px] min-h-screen w-full mx-auto`}>
+    <div className={`${Custom.section} xl:p-5 md:p-10 lg:p-12 p-5 min-h-screen w-full mx-auto`}>
       <div className="flex flex-col lg:flex-row gap-4  w-full mx-auto items-start sticky">
         <div className="sticky flex flex-col bg-dark-200 rounded-3xl py-8 px-6 w-full lg:w-60">
           <h3 className="text-2xl hidden lg:flex">Menu</h3>
@@ -454,10 +455,10 @@ const SwapPanel = () => {
   const [to, setTo] = useState(0)
 
   return (
-    <div className="flex flex-col p-6 w-full gap-8">
+    <div className={`flex flex-col w-full gap-8`}>
 
       <div className="flex flex-col">
-        <h3 className="text-xl"><span className={`${Custom.goldgradient}`}>WSE</span> Swap</h3>
+        <h3 className="text-2xl font-semibold"><span className={`${Custom.goldgradient}`}>WSE</span> Swap</h3>
         <p className={`${Custom.desc} text-start`}>Trade tokens instantly with premium execution</p>
       </div>
       <div className="bg-dark-200 rounded-3xl flex flex-col p-6 gap-6">
@@ -467,16 +468,17 @@ const SwapPanel = () => {
             <p className="text-xl">Swap</p>
             <Icons.Gear />
           </div>
-          <div>
-            <Input label="From" value={from} setValue={setFrom} placeholder="0.0" />
-            <div>
-
+          <div className="flex gap-4 flex-col md:flex-row">
+            <div className="flex-1">
+              <Input label="From" value={from} setValue={setFrom} placeholder="0.0" />
             </div>
+            <TokenSelector />
           </div>
-          <div>
-            <Input label="To" value={to} setValue={setTo} placeholder="0.0" />
-            <div>
+          <div className="flex gap-4 flex-col md:flex-row">
+            <div className="flex-1">
+              <Input label="To" value={to} setValue={setTo} placeholder="0.0" />
             </div>
+            <TokenSelector />
           </div>
 
         </div>
@@ -501,6 +503,105 @@ const SwapPanel = () => {
     </div>
   )
 }
+
+
+
+
+const TokenSelector = () => {
+  const tokens = [
+    {
+      id: 1,
+      name: "ETH",
+      role: "CEO",
+      team: "Management",
+      status: "active",
+      age: "29",
+      avatar: "https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png",
+      email: "tony.reichert@example.com",
+    },
+    {
+      id: 2,
+      name: "BTC",
+      role: "Tech Lead",
+      team: "Development",
+      status: "paused",
+      age: "25",
+      avatar: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
+      email: "zoey.lang@example.com",
+    },
+    {
+      id: 3,
+      name: "SOL",
+      role: "Sr. Dev",
+      team: "Development",
+      status: "active",
+      age: "22",
+      avatar: "https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png",
+      email: "jane.fisher@example.com",
+    },
+  ];
+  return (
+    <Select
+      className="max-w-[150px]"
+      classNames={{
+        label: "group-data-[filled=true]:-translate-y-5",
+        trigger: "min-h-12",
+        listboxWrapper: "max-h-[400px]",
+        base: "max-w-[150px]"
+      }}
+      items={tokens}
+      listboxProps={{
+        itemClasses: {
+          base: [
+            "rounded-md",
+            "text-default-500",
+            "transition-opacity",
+            "data-[hover=true]:text-foreground",
+            "data-[hover=true]:bg-default-100",
+            "dark:data-[hover=true]:bg-default-50",
+            "data-[selectable=true]:focus:bg-default-50",
+            "data-[pressed=true]:opacity-70",
+            "data-[focus-visible=true]:ring-default-500",
+          ],
+        },
+      }}
+      popoverProps={{
+        classNames: {
+          base: "before:bg-default-200",
+          content: "p-0 border-small border-divider bg-background",
+        },
+      }}
+      renderValue={(items) => {
+        return items.map((item: any) => (
+          <div key={item.key} className="flex items-center gap-2">
+            <Avatar
+              alt={item.data.name}
+              className="flex-shrink-0"
+              size="sm"
+              src={item.data.avatar}
+            />
+            <div className="flex flex-col">
+              <span>{item.data.name}</span>
+            </div>
+          </div>
+        ));
+      }}
+      variant="bordered"
+    >
+      {(user) => (
+        <SelectItem key={user.id} textValue={user.name}>
+          <div className="flex gap-2 items-center">
+            <Avatar alt={user.name} className="flex-shrink-0" size="sm" src={user.avatar} />
+            <div className="flex flex-col">
+              <span className="text-small">{user.name}</span>
+            </div>
+          </div>
+        </SelectItem>
+      )}
+    </Select>
+  );
+}
+
 
 
 

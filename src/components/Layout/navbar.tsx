@@ -66,7 +66,6 @@ const Navbar = () => {
       <div className="w-full">
         <TickerTape
           colorTheme="dark"
-          isTransparent
           symbols={[
             {
               proName: "BITSTAMP:SOLUSD",
