@@ -5,7 +5,8 @@ import { Icons } from "@/components/Icons/icons"
 import { Input } from "@/components/Input/input"
 import { Custom } from "@/styles/custom"
 import { useState } from "react"
-import {Select, SelectItem} from "@heroui/react";
+import { Button, ButtonGroup } from "@heroui/button";
+import { Select, SelectItem } from "@heroui/react";
 import {
   Table,
   TableHeader,
@@ -13,6 +14,7 @@ import {
   TableColumn,
   TableRow,
   TableCell,
+  getKeyValue
 } from "@heroui/table";
 
 const PortfolioPage = () => {
@@ -78,95 +80,81 @@ const PortfolioPage = () => {
 const Holders = () => {
 
   const animals = [
-    {key: "cat", label: "Cat"},
-    {key: "dog", label: "Dog"},
-    {key: "elephant", label: "Elephant"},
-    {key: "lion", label: "Lion"},
-    {key: "tiger", label: "Tiger"},
-    {key: "giraffe", label: "Giraffe"},
-    {key: "dolphin", label: "Dolphin"},
-    {key: "penguin", label: "Penguin"},
+    { key: "cat", label: "Cat" },
+    { key: "dog", label: "Dog" },
+    { key: "elephant", label: "Elephant" },
+    { key: "lion", label: "Lion" },
+    { key: "tiger", label: "Tiger" },
+    { key: "giraffe", label: "Giraffe" },
+    { key: "dolphin", label: "Dolphin" },
+    { key: "penguin", label: "Penguin" },
   ];
 
-  const holders = [
+  const rows = [
     {
-      name: "WSE",
-      symbol: "WSE",
-      price: 2.34,
-      change: 5.67,
-      amount: 1000,
-      value: 2340
+      key: "1",
+      name: "Tony Reichert",
+      role: "CEO",
+      status: "Active",
     },
     {
-      name: "Bitcoin",
-      symbol: "btc",
-      price: 65400,
-      change: -2.31,
-      amount: 0.5,
-      value: 120
+      key: "2",
+      name: "Zoey Lang",
+      role: "Technical Lead",
+      status: "Paused",
     },
     {
-      name: "WSE",
-      symbol: "WSE",
-      price: 2.34,
-      change: 5.67,
-      amount: 1000,
-      value: 2340
+      key: "3",
+      name: "Jane Fisher",
+      role: "Senior Developer",
+      status: "Active",
     },
     {
-      name: "WSE",
-      symbol: "WSE",
-      price: 2.34,
-      change: 5.67,
-      amount: 1000,
-      value: 2340
+      key: "4",
+      name: "William Howard",
+      role: "Community Manager",
+      status: "Vacation",
     },
-  ]
+  ];
+  
+  const columns = [
+    {
+      key: "name",
+      label: "NAME",
+    },
+    {
+      key: "role",
+      label: "ROLE",
+    },
+    {
+      key: "status",
+      label: "STATUS",
+    },
+  ];
 
   return (
     <div className="flex flex-col bg-dark-200 p-6 rounded-3xl">
       <div className="flex justify-between">
         <p className="text-2xl">Holdings</p>
         <div>
-          <Select className="max-w-xs" label="Select an animal" size={"sm"}>
-            {animals.map((animal) => (
-              <SelectItem key={animal.key}>{animal.label}</SelectItem>
-            ))}
-          </Select>
+          <Button color="primary">Button</Button>
         </div>
       </div>
       <div className="w-full">
-        <Table aria-label="Example static collection table">
-          <TableHeader>
-            <TableColumn>NAME</TableColumn>
-            <TableColumn>ROLE</TableColumn>
-            <TableColumn>STATUS</TableColumn>
+        <Table aria-label="Example table with dynamic content">
+          <TableHeader columns={columns}>
+            {(column) => <TableColumn key={column.key}>{column.label}</TableColumn>}
           </TableHeader>
-          <TableBody>
-            <TableRow key="1">
-              <TableCell>Tony Reichert</TableCell>
-              <TableCell>CEO</TableCell>
-              <TableCell>Active</TableCell>
-            </TableRow>
-            <TableRow key="2">
-              <TableCell>Zoey Lang</TableCell>
-              <TableCell>Technical Lead</TableCell>
-              <TableCell>Paused</TableCell>
-            </TableRow>
-            <TableRow key="3">
-              <TableCell>Jane Fisher</TableCell>
-              <TableCell>Senior Developer</TableCell>
-              <TableCell>Active</TableCell>
-            </TableRow>
-            <TableRow key="4">
-              <TableCell>William Howard</TableCell>
-              <TableCell>Community Manager</TableCell>
-              <TableCell>Vacation</TableCell>
-            </TableRow>
+          <TableBody items={rows}>
+            {(item) => (
+              <TableRow key={item.key}>
+                {(columnKey) => <TableCell>{getKeyValue(item, columnKey)}</TableCell>}
+              </TableRow>
+            )}
           </TableBody>
         </Table>
       </div>
-    </div>
+    </div >
   )
 }
 
