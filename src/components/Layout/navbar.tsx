@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Icons } from "../Icons/icons";
 import WalletConnectButton from "../Buttons/WalletConnect";
 import NormalButton from "../Buttons/Normal";
@@ -10,6 +10,8 @@ import { useWindowSize } from "@/hooks/useWindowSize";
 import { IoIosClose } from "react-icons/io";
 import { TickerTape } from "react-ts-tradingview-widgets";
 import { Custom } from "@/styles/custom";
+import { WalletContext } from "@/contexts/WalletContext";
+import ActionButton from "../Buttons/ActionButton";
 
 const menuList = [
   {
@@ -42,6 +44,8 @@ const menuList = [
 const Navbar = () => {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { walletConnected, walletConnect } = useContext(WalletContext)
+
   const [rendered, setRendered] = useState(false)
 
 
@@ -105,16 +109,18 @@ const Navbar = () => {
             </Link>
           </div>
 
-          <ul className="lg:flex gap-4 xl:gap-8 hidden">
+          {walletConnected && <ul className="lg:flex gap-4 xl:gap-8 hidden">
             {menuList.map((menu) => (
               <Link href={menu.link} className="flex gap-2 items-center" key={menu.name}>
                 <menu.icon />
                 <p>{menu.name}</p>
               </Link>
             ))}
-          </ul>
+          </ul>}
           {/* <WalletConnectButton /> */}
-          <NormalButton name="Mint Your First ICO" />
+          {walletConnected ? <NormalButton name="Mint Your First ICO" /> :
+          <ActionButton name="Wallet Connect" showIcon={false} className=" px-12"/>}
+          
         </div>
       </div>
       {isMobileMenuOpen && (
