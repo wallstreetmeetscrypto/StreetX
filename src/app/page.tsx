@@ -1,4 +1,5 @@
 import BackgroundImage from "@/components/BackgroundImage";
+import OverLayModal from "@/components/Modals/overlay";
 import About from "@/landing/About";
 import BondingCurve from "@/landing/BondingCurve";
 import HeroSecion from "@/landing/Hero";
@@ -10,6 +11,7 @@ import WSETrading from "@/landing/WSETrading";
 export default function Home() {
   return (
     <>
+      <OverLayModal />
       <HeroSecion />
       <Phenomenon />
       <WSETrading />

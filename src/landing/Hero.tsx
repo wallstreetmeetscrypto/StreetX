@@ -2,16 +2,19 @@
 import ActionButton from "@/components/Buttons/ActionButton"
 import NormalButton from "@/components/Buttons/Normal"
 import Navbar from "@/components/Layout/navbar"
+import { ModalContext } from "@/contexts/ModalContext"
 import { Custom } from "@/styles/custom"
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { TickerTape } from "react-ts-tradingview-widgets"
 
 const HeroSecion = () => {
 
   const [rendered, setRendered] = useState(false)
+  const { openOverlayModal } = useContext(ModalContext);
   useEffect(() => {
     if (window) {
       setRendered(true)
+      openOverlayModal()
     }
   }, [])
 
