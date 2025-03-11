@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation"
 import { useEffect, useState } from "react"
 import { AdvancedRealTimeChart } from "react-ts-tradingview-widgets"
 import { Select, SelectItem, Avatar } from "@heroui/react";
+import Layout from "@/components/Layout/layout"
 
 
 const tabList = [
@@ -65,263 +66,265 @@ const DashboardPage = () => {
   }, [tabIndex])
 
   return (
-    <div className={`${Custom.section} xl:p-5 md:p-10 lg:p-12 p-5 min-h-screen w-full mx-auto`}>
-      <div className="flex flex-col lg:flex-row gap-4  w-full mx-auto items-start sticky">
-        <div className="sticky flex flex-col bg-dark-200 rounded-3xl py-8 px-6 w-full lg:w-60">
-          <h3 className="text-2xl hidden lg:flex">Menu</h3>
-          <div className="flex flex-row lg:flex-col gap-2 lg:mt-4 overflow-auto">
-            {tabList.map((item) => (
-              <div key={item.id} className={`${tabIndex === item.id ? "bg-dark-50/10" : ""}  rounded-2xl px-4 py-1 cursor-pointer flex items-center mb-1`} onClick={() => setTabIndex(item.id)}>
-                <div className="w-8">
-                  <item.icon />
+    <Layout>
+      <div className={`${Custom.section} xl:p-5 md:p-10 lg:p-12 p-5 min-h-screen w-full mx-auto`}>
+        <div className="flex flex-col lg:flex-row gap-4  w-full mx-auto items-start sticky">
+          <div className="sticky flex flex-col bg-dark-200 rounded-3xl py-8 px-6 w-full lg:w-60">
+            <h3 className="text-2xl hidden lg:flex">Menu</h3>
+            <div className="flex flex-row lg:flex-col gap-2 lg:mt-4 overflow-auto">
+              {tabList.map((item) => (
+                <div key={item.id} className={`${tabIndex === item.id ? "bg-dark-50/10" : ""}  rounded-2xl px-4 py-1 cursor-pointer flex items-center mb-1`} onClick={() => setTabIndex(item.id)}>
+                  <div className="w-8">
+                    <item.icon />
+                  </div>
+                  <p className="">
+                    {item.title}
+                  </p>
                 </div>
-                <p className="">
-                  {item.title}
-                </p>
+              ))}
+            </div>
+          </div>
+          <div className="tab-content flex-1 gap-4 w-full">
+            {tabIndex === 0 &&
+              <div className="flex flex-col gap-4">
+                <div className="grid-cols-2 grid lg:grid-cols-4 gap-4">
+                  <div className="flex items-start flex-col gap-4 rounded-2xl bg-dark-200 p-8">
+                    <p className={`${Custom.desc}`}>MUSK Price</p>
+                    <div className="flex items-center">
+                      <p className="text-4xl font-semibold">
+                        0.0035
+                      </p>
+                      <div className="text-green-500 text-xl">
+                        ↗15.6%
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start flex-col gap-4 rounded-2xl bg-dark-200 p-8">
+                    <p className={`${Custom.desc}`}>24h Volume</p>
+                    <div className="flex items-center">
+                      <p className="text-4xl font-semibold">
+                        $1.24M
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start flex-col gap-4 rounded-2xl bg-dark-200 p-8">
+                    <p className={`${Custom.desc}`}>Total Liquidity</p>
+                    <div className="flex items-center">
+                      <p className="text-4xl font-semibold">
+                        $4.56M
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start flex-col gap-4 rounded-2xl bg-dark-200 p-8">
+                    <p className={`${Custom.desc}`}>Market Cap</p>
+                    <div className="flex items-center">
+                      <p className="text-4xl font-semibold">
+                        $89.2M
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <AdvancedRealTimeChart
+                  theme="dark"
+                  height={500}
+                  width={"100%"} />
+
+                <div className="flex flex-col md:flex-row w-full gap-4">
+                  <div className="rounded-3xl bg-dark-200 p-6 basis-1/2 ">
+                    <p className="text-2xl mb-8">Trade MUSK</p>
+                    <div className="flex flex-col gap-4">
+                      <Input label="Amount (MUSK)" placeholder="0.00" />
+                      <Input label="Price (USD)" placeholder="0.00" />
+                      <div className="flex flex-col md:flex-row w-full gap-8">
+                        <ActionButton className="basis-1/2" name="Buy Musk" showIcon={false} />
+                        <NormalButton className="basis-1/2" name="Sell MUSK" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="rounded-3xl bg-dark-200 p-6 basis-1/2 ">
+                    <p className="text-2xl mb-8">Portfolio</p>
+                    <div className="flex flex-col gap-5">
+                      <div className="flex justify-between">
+                        <p className={`${Custom.desc}`}>
+                          Available Balance
+                        </p>
+                        <p>
+                          $12,456.78
+                        </p>
+                      </div>
+                      <div className="flex justify-between">
+                        <p className={`${Custom.desc}`}>
+                          MUSK Balance
+                        </p>
+                        <p>
+                          3,500,000 MUSK
+                        </p>
+                      </div>
+                      <div className="flex justify-between">
+                        <p className={`${Custom.desc}`}>
+                          Unrealized P/L
+                        </p>
+                        <p>
+                          $73,126.00
+                        </p>
+                      </div>
+                      <div className="flex justify-between">
+                        <p className={`${Custom.desc}`}>
+                          MUSK Price (Live)
+                        </p>
+                        <p>
+                          $560.00XX
+                        </p>
+                      </div>
+                      <div className="flex justify-between">
+                        <p className={`${Custom.desc}`}>
+                          Total Portfolio Value
+                        </p>
+                        <p>
+                          +$890.45
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+                <TokenHistory />
               </div>
-            ))}
+            }
+            {tabIndex === 3 &&
+              <div className="flex flex-col gap-8">
+                <div className="flex flex-col">
+                  <h3 className="text-xl">Liquidity Pools</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 mt-6 gap-4">
+                    <div className="flex bg-dark-200 rounded-2xl p-6 justify-between items-center">
+                      <div className="flex flex-col gap-4">
+                        <p className={`${Custom.desc}`}>Total Value Locked</p>
+                        <p className="text-xl">$1234567</p>
+                      </div>
+                      <Icons.Money />
+                    </div>
+                    <div className="flex bg-dark-200 rounded-2xl p-6 justify-between items-center">
+                      <div className="flex flex-col gap-4">
+                        <p className={`${Custom.desc}`}>24h Volume</p>
+                        <p className="text-xl">$1234567</p>
+                      </div>
+                      <Icons.Volume />
+                    </div>
+                    <div className="flex bg-dark-200 rounded-2xl p-6 justify-between items-center">
+                      <div className="flex flex-col gap-4">
+                        <p className={`${Custom.desc}`}>Total Rewards</p>
+                        <p className="text-xl">$1234567</p>
+                      </div>
+                      <Icons.VolumeUpGold />
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col">
+                  <h3 className="text-xl">Active Pools</h3>
+                  <div className="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-4">
+                    <div className="flex bg-dark-200 rounded-2xl p-6 flex-col gap-8">
+                      <div className="flex justify-between w-full">
+                        <div className="flex flex-col gap-4 items-start">
+                          <p className={`${Custom.desc}`}>Token Pair</p>
+                          <p className="text-xl">SOL/USDT</p>
+                        </div>
+                        <div className="flex flex-col items-end">
+                          <p className={`${Custom.desc}`}>APY </p>
+                          <p className={`text-gold-300`}>12.5%</p>
+                        </div>
+                      </div>
+                      <div className="flex justify-between">
+                        <div className="flex flex-col gap-4 items-start">
+                          <p className={`${Custom.desc}`}>Total Liquidity </p>
+                          <p className="text-xl">$500,000</p>
+                        </div>
+                        <div className="flex items-end flex-col">
+                          <p className={`${Custom.desc}`}>Your Share </p>
+                          <p className={`text-gold-300`}>%2.5</p>
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-start">
+                        <p className={`${Custom.desc}`}>Earned Rewards </p>
+                        <p className={`text-gold-300`}>$1234</p>
+                      </div>
+                      <div className="flex justify-between w-full gap-4 lg:flex-row flex-col">
+                        <ControlButton className="w-full">+ Add</ControlButton>
+                        <ControlButton className="w-full">- Remove</ControlButton>
+                      </div>
+                    </div>
+                    <div className="flex bg-dark-200 rounded-2xl p-6 flex-col gap-8">
+                      <div className="flex justify-between w-full">
+                        <div className="flex flex-col gap-4 items-start">
+                          <p className={`${Custom.desc}`}>Token Pair</p>
+                          <p className="text-xl">SOL/USDT</p>
+                        </div>
+                        <div className="flex flex-col items-end">
+                          <p className={`${Custom.desc}`}>APY </p>
+                          <p className={`text-gold-300`}>12.5%</p>
+                        </div>
+                      </div>
+                      <div className="flex justify-between">
+                        <div className="flex flex-col gap-4 items-start">
+                          <p className={`${Custom.desc}`}>Total Liquidity </p>
+                          <p className="text-xl">$500,000</p>
+                        </div>
+                        <div className="flex items-end flex-col">
+                          <p className={`${Custom.desc}`}>Your Share </p>
+                          <p className={`text-gold-300`}>%2.5</p>
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-start">
+                        <p className={`${Custom.desc}`}>Earned Rewards </p>
+                        <p className={`text-gold-300`}>$1234</p>
+                      </div>
+                      <div className="flex justify-between w-full gap-4 lg:flex-row flex-col">
+                        <ControlButton className="w-full">+ Add</ControlButton>
+                        <ControlButton className="w-full">- Remove</ControlButton>
+                      </div>
+                    </div>
+                    <div className="flex bg-dark-200 rounded-2xl p-6 flex-col gap-8">
+                      <div className="flex justify-between w-full">
+                        <div className="flex flex-col gap-4 items-start">
+                          <p className={`${Custom.desc}`}>Token Pair</p>
+                          <p className="text-xl">SOL/USDT</p>
+                        </div>
+                        <div className="flex flex-col items-end">
+                          <p className={`${Custom.desc}`}>APY </p>
+                          <p className={`text-gold-300`}>12.5%</p>
+                        </div>
+                      </div>
+                      <div className="flex justify-between">
+                        <div className="flex flex-col gap-4 items-start">
+                          <p className={`${Custom.desc}`}>Total Liquidity </p>
+                          <p className="text-xl">$500,000</p>
+                        </div>
+                        <div className="flex items-end flex-col">
+                          <p className={`${Custom.desc}`}>Your Share </p>
+                          <p className={`text-gold-300`}>%2.5</p>
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-start">
+                        <p className={`${Custom.desc}`}>Earned Rewards </p>
+                        <p className={`text-gold-300`}>$1234</p>
+                      </div>
+                      <div className="flex justify-between w-full gap-4 lg:flex-row flex-col">
+                        <ControlButton className="w-full">+ Add</ControlButton>
+                        <ControlButton className="w-full">- Remove</ControlButton>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            }
+            {tabIndex === 4 &&
+              <SwapPanel />
+            }
           </div>
         </div>
-        <div className="tab-content flex-1 gap-4 w-full">
-          {tabIndex === 0 &&
-            <div className="flex flex-col gap-4">
-              <div className="grid-cols-2 grid lg:grid-cols-4 gap-4">
-                <div className="flex items-start flex-col gap-4 rounded-2xl bg-dark-200 p-8">
-                  <p className={`${Custom.desc}`}>MUSK Price</p>
-                  <div className="flex items-center">
-                    <p className="text-4xl font-semibold">
-                      0.0035
-                    </p>
-                    <div className="text-green-500 text-xl">
-                      ↗15.6%
-                    </div>
-                  </div>
-                </div>
-                <div className="flex items-start flex-col gap-4 rounded-2xl bg-dark-200 p-8">
-                  <p className={`${Custom.desc}`}>24h Volume</p>
-                  <div className="flex items-center">
-                    <p className="text-4xl font-semibold">
-                      $1.24M
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start flex-col gap-4 rounded-2xl bg-dark-200 p-8">
-                  <p className={`${Custom.desc}`}>Total Liquidity</p>
-                  <div className="flex items-center">
-                    <p className="text-4xl font-semibold">
-                      $4.56M
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start flex-col gap-4 rounded-2xl bg-dark-200 p-8">
-                  <p className={`${Custom.desc}`}>Market Cap</p>
-                  <div className="flex items-center">
-                    <p className="text-4xl font-semibold">
-                      $89.2M
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <AdvancedRealTimeChart
-                theme="dark"
-                height={500}
-                width={"100%"} />
-
-              <div className="flex flex-col md:flex-row w-full gap-4">
-                <div className="rounded-3xl bg-dark-200 p-6 basis-1/2 ">
-                  <p className="text-2xl mb-8">Trade MUSK</p>
-                  <div className="flex flex-col gap-4">
-                    <Input label="Amount (MUSK)" placeholder="0.00" />
-                    <Input label="Price (USD)" placeholder="0.00" />
-                    <div className="flex flex-col md:flex-row w-full gap-8">
-                      <ActionButton className="basis-1/2" name="Buy Musk" showIcon={false} />
-                      <NormalButton className="basis-1/2" name="Sell MUSK" />
-                    </div>
-                  </div>
-                </div>
-                <div className="rounded-3xl bg-dark-200 p-6 basis-1/2 ">
-                  <p className="text-2xl mb-8">Portfolio</p>
-                  <div className="flex flex-col gap-5">
-                    <div className="flex justify-between">
-                      <p className={`${Custom.desc}`}>
-                        Available Balance
-                      </p>
-                      <p>
-                        $12,456.78
-                      </p>
-                    </div>
-                    <div className="flex justify-between">
-                      <p className={`${Custom.desc}`}>
-                        MUSK Balance
-                      </p>
-                      <p>
-                        3,500,000 MUSK
-                      </p>
-                    </div>
-                    <div className="flex justify-between">
-                      <p className={`${Custom.desc}`}>
-                        Unrealized P/L
-                      </p>
-                      <p>
-                        $73,126.00
-                      </p>
-                    </div>
-                    <div className="flex justify-between">
-                      <p className={`${Custom.desc}`}>
-                        MUSK Price (Live)
-                      </p>
-                      <p>
-                        $560.00XX
-                      </p>
-                    </div>
-                    <div className="flex justify-between">
-                      <p className={`${Custom.desc}`}>
-                        Total Portfolio Value
-                      </p>
-                      <p>
-                        +$890.45
-                      </p>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-              <TokenHistory />
-            </div>
-          }
-          {tabIndex === 3 &&
-            <div className="flex flex-col gap-8">
-              <div className="flex flex-col">
-                <h3 className="text-xl">Liquidity Pools</h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 mt-6 gap-4">
-                  <div className="flex bg-dark-200 rounded-2xl p-6 justify-between items-center">
-                    <div className="flex flex-col gap-4">
-                      <p className={`${Custom.desc}`}>Total Value Locked</p>
-                      <p className="text-xl">$1234567</p>
-                    </div>
-                    <Icons.Money />
-                  </div>
-                  <div className="flex bg-dark-200 rounded-2xl p-6 justify-between items-center">
-                    <div className="flex flex-col gap-4">
-                      <p className={`${Custom.desc}`}>24h Volume</p>
-                      <p className="text-xl">$1234567</p>
-                    </div>
-                    <Icons.Volume />
-                  </div>
-                  <div className="flex bg-dark-200 rounded-2xl p-6 justify-between items-center">
-                    <div className="flex flex-col gap-4">
-                      <p className={`${Custom.desc}`}>Total Rewards</p>
-                      <p className="text-xl">$1234567</p>
-                    </div>
-                    <Icons.VolumeUpGold />
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col">
-                <h3 className="text-xl">Active Pools</h3>
-                <div className="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-4">
-                  <div className="flex bg-dark-200 rounded-2xl p-6 flex-col gap-8">
-                    <div className="flex justify-between w-full">
-                      <div className="flex flex-col gap-4 items-start">
-                        <p className={`${Custom.desc}`}>Token Pair</p>
-                        <p className="text-xl">SOL/USDT</p>
-                      </div>
-                      <div className="flex flex-col items-end">
-                        <p className={`${Custom.desc}`}>APY </p>
-                        <p className={`text-gold-300`}>12.5%</p>
-                      </div>
-                    </div>
-                    <div className="flex justify-between">
-                      <div className="flex flex-col gap-4 items-start">
-                        <p className={`${Custom.desc}`}>Total Liquidity </p>
-                        <p className="text-xl">$500,000</p>
-                      </div>
-                      <div className="flex items-end flex-col">
-                        <p className={`${Custom.desc}`}>Your Share </p>
-                        <p className={`text-gold-300`}>%2.5</p>
-                      </div>
-                    </div>
-                    <div className="flex flex-col items-start">
-                      <p className={`${Custom.desc}`}>Earned Rewards </p>
-                      <p className={`text-gold-300`}>$1234</p>
-                    </div>
-                    <div className="flex justify-between w-full gap-4 lg:flex-row flex-col">
-                      <ControlButton className="w-full">+ Add</ControlButton>
-                      <ControlButton className="w-full">- Remove</ControlButton>
-                    </div>
-                  </div>
-                  <div className="flex bg-dark-200 rounded-2xl p-6 flex-col gap-8">
-                    <div className="flex justify-between w-full">
-                      <div className="flex flex-col gap-4 items-start">
-                        <p className={`${Custom.desc}`}>Token Pair</p>
-                        <p className="text-xl">SOL/USDT</p>
-                      </div>
-                      <div className="flex flex-col items-end">
-                        <p className={`${Custom.desc}`}>APY </p>
-                        <p className={`text-gold-300`}>12.5%</p>
-                      </div>
-                    </div>
-                    <div className="flex justify-between">
-                      <div className="flex flex-col gap-4 items-start">
-                        <p className={`${Custom.desc}`}>Total Liquidity </p>
-                        <p className="text-xl">$500,000</p>
-                      </div>
-                      <div className="flex items-end flex-col">
-                        <p className={`${Custom.desc}`}>Your Share </p>
-                        <p className={`text-gold-300`}>%2.5</p>
-                      </div>
-                    </div>
-                    <div className="flex flex-col items-start">
-                      <p className={`${Custom.desc}`}>Earned Rewards </p>
-                      <p className={`text-gold-300`}>$1234</p>
-                    </div>
-                    <div className="flex justify-between w-full gap-4 lg:flex-row flex-col">
-                      <ControlButton className="w-full">+ Add</ControlButton>
-                      <ControlButton className="w-full">- Remove</ControlButton>
-                    </div>
-                  </div>
-                  <div className="flex bg-dark-200 rounded-2xl p-6 flex-col gap-8">
-                    <div className="flex justify-between w-full">
-                      <div className="flex flex-col gap-4 items-start">
-                        <p className={`${Custom.desc}`}>Token Pair</p>
-                        <p className="text-xl">SOL/USDT</p>
-                      </div>
-                      <div className="flex flex-col items-end">
-                        <p className={`${Custom.desc}`}>APY </p>
-                        <p className={`text-gold-300`}>12.5%</p>
-                      </div>
-                    </div>
-                    <div className="flex justify-between">
-                      <div className="flex flex-col gap-4 items-start">
-                        <p className={`${Custom.desc}`}>Total Liquidity </p>
-                        <p className="text-xl">$500,000</p>
-                      </div>
-                      <div className="flex items-end flex-col">
-                        <p className={`${Custom.desc}`}>Your Share </p>
-                        <p className={`text-gold-300`}>%2.5</p>
-                      </div>
-                    </div>
-                    <div className="flex flex-col items-start">
-                      <p className={`${Custom.desc}`}>Earned Rewards </p>
-                      <p className={`text-gold-300`}>$1234</p>
-                    </div>
-                    <div className="flex justify-between w-full gap-4 lg:flex-row flex-col">
-                      <ControlButton className="w-full">+ Add</ControlButton>
-                      <ControlButton className="w-full">- Remove</ControlButton>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          }
-          {tabIndex === 4 &&
-            <SwapPanel />
-          }
-        </div>
       </div>
-    </div>
+    </Layout>
   )
 }
 

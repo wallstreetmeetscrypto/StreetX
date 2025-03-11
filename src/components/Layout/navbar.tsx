@@ -98,8 +98,8 @@ const Navbar = () => {
           ]}
         />
       </div>
-      <div className={`${Custom.section} w-full lg:w-auto`}>
-        <div className=" flex items-center space-x-1 justify-between gap-8 xl:gap-12 ">
+      <div className={`${Custom.section} w-full`}>
+        <div className=" flex items-center space-x-1 justify-between gap-8 xl:gap-12">
           <div className="flex gap-2 items-center z-50">
             <div className="flex lg:hidden" onClick={() => setIsMobileMenuOpen(true)}>
               <Icons.Hamburger />

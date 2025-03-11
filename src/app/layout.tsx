@@ -31,10 +31,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <Layout>
-            <BackgroundImage className="fixed -z-50 top-0" />
-            {children}
-          </Layout>
+          <BackgroundImage className="fixed -z-50 top-0" />
+          {children}
         </Providers>
       </body>
     </html>

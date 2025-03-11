@@ -16,64 +16,67 @@ import {
   TableCell,
   getKeyValue
 } from "@heroui/table";
+import Layout from "@/components/Layout/layout"
 
 const PortfolioPage = () => {
 
   return (
-    <div className={`${Custom.section} xl:p-5 md:p-10 lg:p-12 p-5 md:mt-12 mt-[100px] min-h-screen w-full mx-auto gap-8`}>
+    <Layout>
+      <div className={`${Custom.section} xl:p-5 md:p-10 lg:p-12 p-5 md:mt-12 mt-[100px] min-h-screen w-full mx-auto gap-8`}>
 
-      <div className="flex flex-col lg:flex-row gap-8">
-        <div className="p-6 bg-dark-200 rounded-3xl flex flex-col basis-1/2 gap-6">
-          <div className="flex items-center gap-4">
-            <Icons.TotalBalance />
-            <div className="flex flex-col">
-              <p className="opacity-70">Total Balance</p>
-              <p className="font-semibold">$51,040</p>
+        <div className="flex flex-col lg:flex-row gap-8">
+          <div className="p-6 bg-dark-200 rounded-3xl flex flex-col basis-1/2 gap-6">
+            <div className="flex items-center gap-4">
+              <Icons.TotalBalance />
+              <div className="flex flex-col">
+                <p className="opacity-70">Total Balance</p>
+                <p className="font-semibold">$51,040</p>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <div className="flex justify-between items-center">
+                <p className="opacity-70">Assets</p>
+                <p>3</p>
+              </div>
+              <div className="flex justify-between items-center">
+                <p className="opacity-70">Total Minted WSE</p>
+                <p>1,000</p>
+              </div>
+              <div className="flex justify-between items-center">
+                <p className="opacity-70">Rewards Pending</p>
+                <p className="text-gold-300">+$123.45</p>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <div className="flex justify-between items-center">
-              <p className="opacity-70">Assets</p>
-              <p>3</p>
+          <div className="p-6 bg-dark-200 rounded-3xl flex flex-col basis-1/2 gap-6">
+            <div className="flex items-center gap-4">
+              <Icons.Profit />
+              <div className="flex flex-col">
+                <p className="opacity-70">24h Profit and Loss</p>
+                <p className="font-semibold">+$1,234.56</p>
+              </div>
             </div>
-            <div className="flex justify-between items-center">
-              <p className="opacity-70">Total Minted WSE</p>
-              <p>1,000</p>
-            </div>
-            <div className="flex justify-between items-center">
-              <p className="opacity-70">Rewards Pending</p>
-              <p className="text-gold-300">+$123.45</p>
+            <div className="flex flex-col gap-4">
+              <div className="flex justify-between items-center">
+                <p className="opacity-70">Assets</p>
+                <p>3</p>
+              </div>
+              <div className="flex justify-between items-center">
+                <p className="opacity-70">Total Minted WSE</p>
+                <p>1,000</p>
+              </div>
+              <div className="flex justify-between items-center">
+                <p className="opacity-70">Rewards Pending</p>
+                <p className="text-gold-300">+$123.45</p>
+              </div>
             </div>
           </div>
         </div>
-        <div className="p-6 bg-dark-200 rounded-3xl flex flex-col basis-1/2 gap-6">
-          <div className="flex items-center gap-4">
-            <Icons.Profit />
-            <div className="flex flex-col">
-              <p className="opacity-70">24h Profit and Loss</p>
-              <p className="font-semibold">+$1,234.56</p>
-            </div>
-          </div>
-          <div className="flex flex-col gap-4">
-            <div className="flex justify-between items-center">
-              <p className="opacity-70">Assets</p>
-              <p>3</p>
-            </div>
-            <div className="flex justify-between items-center">
-              <p className="opacity-70">Total Minted WSE</p>
-              <p>1,000</p>
-            </div>
-            <div className="flex justify-between items-center">
-              <p className="opacity-70">Rewards Pending</p>
-              <p className="text-gold-300">+$123.45</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <Holders />
+        <Holders />
 
-    </div >
+      </div >
+    </Layout>
   )
 }
 
@@ -116,7 +119,7 @@ const Holders = () => {
       status: "Vacation",
     },
   ];
-  
+
   const columns = [
     {
       key: "name",

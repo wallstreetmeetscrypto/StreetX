@@ -313,5 +313,82 @@ export const Icons = {
       <path d="M20 25C22.7614 25 25 22.7614 25 20C25 17.2386 22.7614 15 20 15C17.2386 15 15 17.2386 15 20C15 22.7614 17.2386 25 20 25Z" stroke="#9CA3AF" strokeWidth="1.33333" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
+  GoldLight: ({ size = 82, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <mask id="path-1-inside-1_440_228" fill="white">
+        <path d="M0 26C0 11.6406 11.6406 0 26 0L56 0C70.3594 0 82 11.6406 82 26V56C82 70.3594 70.3594 82 56 82H26C11.6406 82 0 70.3594 0 56L0 26Z" />
+      </mask>
+      <path d="M0 26C0 11.6406 11.6406 0 26 0L56 0C70.3594 0 82 11.6406 82 26V56C82 70.3594 70.3594 82 56 82H26C11.6406 82 0 70.3594 0 56L0 26Z" fill="#050400" />
+      <g clip-path="url(#paint0_diamond_440_228_clip_path)" mask="url(#path-1-inside-1_440_228)"><g transform="matrix(0.0667332 0.0760337 -0.146422 0.128511 13 2.99999)"><rect x="0" y="0" width="1148.42" height="375.59" fill="url(#paint0_diamond_440_228)" opacity="1" shape-rendering="crispEdges" /><rect x="0" y="0" width="1148.42" height="375.59" transform="scale(1 -1)" fill="url(#paint0_diamond_440_228)" opacity="1" shape-rendering="crispEdges" /><rect x="0" y="0" width="1148.42" height="375.59" transform="scale(-1 1)" fill="url(#paint0_diamond_440_228)" opacity="1" shape-rendering="crispEdges" /><rect x="0" y="0" width="1148.42" height="375.59" transform="scale(-1)" fill="url(#paint0_diamond_440_228)" opacity="1" shape-rendering="crispEdges" /></g></g><path d="M26 8L56 8V-8L26 -8V8ZM74 26V56H90V26H74ZM56 74H26V90H56V74ZM8 56L8 26H-8L-8 56H8ZM26 74C16.0589 74 8 65.9411 8 56H-8C-8 74.7777 7.22232 90 26 90V74ZM74 56C74 65.9411 65.9411 74 56 74V90C74.7777 90 90 74.7777 90 56H74ZM56 8C65.9411 8 74 16.0589 74 26H90C90 7.22232 74.7777 -8 56 -8V8ZM26 -8C7.22232 -8 -8 7.22232 -8 26H8C8 16.0589 16.0589 8 26 8V-8Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_DIAMOND&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.71764707565307617,&#34;g&#34;:0.60784316062927246,&#34;b&#34;:0.30588236451148987,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.14901961386203766,&#34;g&#34;:0.10980392247438431,&#34;b&#34;:0.0,&#34;a&#34;:1.0},&#34;position&#34;:0.50999999046325684},{&#34;color&#34;:{&#34;r&#34;:0.14901961386203766,&#34;g&#34;:0.10980392247438431,&#34;b&#34;:0.0,&#34;a&#34;:1.0},&#34;position&#34;:0.77418947219848633},{&#34;color&#34;:{&#34;r&#34;:0.39531248807907104,&#34;g&#34;:0.33114579319953918,&#34;b&#34;:0.15468749403953552,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.71764707565307617,&#34;g&#34;:0.60784316062927246,&#34;b&#34;:0.30588236451148987,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.14901961386203766,&#34;g&#34;:0.10980392247438431,&#34;b&#34;:0.0,&#34;a&#34;:1.0},&#34;position&#34;:0.50999999046325684},{&#34;color&#34;:{&#34;r&#34;:0.14901961386203766,&#34;g&#34;:0.10980392247438431,&#34;b&#34;:0.0,&#34;a&#34;:1.0},&#34;position&#34;:0.77418947219848633},{&#34;color&#34;:{&#34;r&#34;:0.39531248807907104,&#34;g&#34;:0.33114579319953918,&#34;b&#34;:0.15468749403953552,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;transform&#34;:{&#34;m00&#34;:133.466308593750,&#34;m01&#34;:-292.843750,&#34;m02&#34;:92.688728332519531,&#34;m10&#34;:152.06738281250,&#34;m11&#34;:257.02267456054688,&#34;m12&#34;:-201.54504394531250},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}" mask="url(#path-1-inside-1_440_228)" />
+      <g clip-path="url(#clip0_440_228)">
+        <rect x="10" y="10" width="62" height="62" rx="16" fill="white" fill-opacity="0.02" />
+        <g filter="url(#filter1_d_440_228)">
+          <g clip-path="url(#paint1_diamond_440_228_clip_path)" ><g transform="matrix(-0.0377668 -0.0339663 0.389551 -0.433139 45 39)"><rect x="0" y="0" width="921.92" height="84.7201" fill="url(#paint1_diamond_440_228)" opacity="1" shape-rendering="crispEdges" /><rect x="0" y="0" width="921.92" height="84.7201" transform="scale(1 -1)" fill="url(#paint1_diamond_440_228)" opacity="1" shape-rendering="crispEdges" /><rect x="0" y="0" width="921.92" height="84.7201" transform="scale(-1 1)" fill="url(#paint1_diamond_440_228)" opacity="1" shape-rendering="crispEdges" /><rect x="0" y="0" width="921.92" height="84.7201" transform="scale(-1)" fill="url(#paint1_diamond_440_228)" opacity="1" shape-rendering="crispEdges" /></g></g><rect x="10" y="10" width="62" height="62" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_DIAMOND&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.59878796339035034,&#34;g&#34;:0.51434332132339478,&#34;b&#34;:0.16121205687522888,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.88545453548431396,&#34;g&#34;:0.82545459270477295,&#34;b&#34;:0.57454544305801392,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.59878796339035034,&#34;g&#34;:0.51434332132339478,&#34;b&#34;:0.16121205687522888,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.88545453548431396,&#34;g&#34;:0.82545459270477295,&#34;b&#34;:0.57454544305801392,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;transform&#34;:{&#34;m00&#34;:-75.533683776855469,&#34;m01&#34;:779.10260009765625,&#34;m02&#34;:-306.78445434570312,&#34;m10&#34;:-67.932624816894531,&#34;m11&#34;:-866.27722167968750,&#34;m12&#34;:506.10491943359375},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}" />
+        </g>
+        <g clip-path="url(#clip1_440_228)">
+          <path d="M49.8351 40.9037C51.0445 39.1736 51.75 37.0656 51.75 34.7812C51.75 28.8436 46.9377 24.0312 41 24.0312C35.0623 24.0312 30.25 28.8436 30.25 34.7812C30.25 37.0656 30.9555 39.1736 32.1648 40.9037C32.4756 41.3488 32.8451 41.8527 33.2398 42.3902C34.3232 43.8768 35.6166 45.6572 36.5824 47.4125C37.4559 49.0082 37.901 50.6711 38.1193 52.2416H34.0293C33.8445 51.2338 33.5338 50.2512 33.0383 49.3441C32.2068 47.8324 31.1738 46.4131 30.1408 44.9937C29.7041 44.3975 29.2674 43.8012 28.8475 43.1965C27.193 40.8197 26.2188 37.9139 26.2188 34.7812C26.2188 26.618 32.8367 20 41 20C49.1633 20 55.7812 26.618 55.7812 34.7812C55.7812 37.9139 54.807 40.8197 53.1441 43.2049C52.7242 43.8096 52.2875 44.4059 51.8508 45.0021C50.8178 46.4131 49.7848 47.8324 48.9533 49.3525C48.4578 50.2596 48.1471 51.2422 47.9623 52.25H43.8891C44.1074 50.6795 44.5525 49.0082 45.426 47.4209C46.3918 45.6656 47.6851 43.8852 48.7685 42.3986C49.1633 41.8611 49.5244 41.3572 49.8351 40.9121V40.9037ZM41 30.75C38.7744 30.75 36.9687 32.5557 36.9687 34.7812C36.9687 35.5203 36.3641 36.125 35.625 36.125C34.8859 36.125 34.2812 35.5203 34.2812 34.7812C34.2812 31.0691 37.2879 28.0625 41 28.0625C41.7391 28.0625 42.3437 28.6672 42.3437 29.4062C42.3437 30.1453 41.7391 30.75 41 30.75ZM41 63C37.2879 63 34.2812 59.9934 34.2812 56.2812V54.9375H47.7187V56.2812C47.7187 59.9934 44.7121 63 41 63Z" fill="white" />
+        </g>
+      </g>
+      <defs>
+        <clipPath id="paint0_diamond_440_228_clip_path"><path d="M26 8L56 8V-8L26 -8V8ZM74 26V56H90V26H74ZM56 74H26V90H56V74ZM8 56L8 26H-8L-8 56H8ZM26 74C16.0589 74 8 65.9411 8 56H-8C-8 74.7777 7.22232 90 26 90V74ZM74 56C74 65.9411 65.9411 74 56 74V90C74.7777 90 90 74.7777 90 56H74ZM56 8C65.9411 8 74 16.0589 74 26H90C90 7.22232 74.7777 -8 56 -8V8ZM26 -8C7.22232 -8 -8 7.22232 -8 26H8C8 16.0589 16.0589 8 26 8V-8Z" mask="url(#path-1-inside-1_440_228)" /></clipPath><filter id="filter1_d_440_228" x="6" y="10" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+          <feOffset dy="4" />
+          <feGaussianBlur stdDeviation="2" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_440_228" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_440_228" result="shape" />
+        </filter>
+        <clipPath id="paint1_diamond_440_228_clip_path"><rect x="10" y="10" width="62" height="62" /></clipPath><linearGradient id="paint0_diamond_440_228" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#B79B4E" />
+          <stop offset="0.51" stop-color="#261C00" />
+          <stop offset="0.774189" stop-color="#261C00" />
+          <stop offset="1" stop-color="#655427" />
+        </linearGradient>
+        <linearGradient id="paint1_diamond_440_228" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#998329" />
+          <stop offset="1" stop-color="#E2D293" />
+        </linearGradient>
+        <clipPath id="clip0_440_228">
+          <rect x="10" y="10" width="62" height="62" rx="16" fill="white" />
+        </clipPath>
+        <clipPath id="clip1_440_228">
+          <rect width="32.25" height="43" fill="white" transform="translate(24.875 20)" />
+        </clipPath>
+      </defs>
+    </svg>
+
+  ),
+  Dot: ({ size = 25, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.980469" width="24" height="24" rx="12" fill="#EADFB1" />
+      <rect x="6.98047" y="6" width="12" height="12" rx="6" fill="#0D0E10" />
+    </svg>
+  ),
+  Matter: ({ size = 64, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="64" height="64" rx="32" fill="#D4AF37" fill-opacity="0.1" />
+      <path d="M44.0007 37.2996H38.6673C37.9309 37.2996 37.334 37.8965 37.334 38.6329V43.9662C37.334 44.7026 37.9309 45.2996 38.6673 45.2996H44.0007C44.737 45.2996 45.334 44.7026 45.334 43.9662V38.6329C45.334 37.8965 44.737 37.2996 44.0007 37.2996Z" stroke="#EADFB1" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M25.3327 37.2996H19.9993C19.263 37.2996 18.666 37.8965 18.666 38.6329V43.9662C18.666 44.7026 19.263 45.2996 19.9993 45.2996H25.3327C26.0691 45.2996 26.666 44.7026 26.666 43.9662V38.6329C26.666 37.8965 26.0691 37.2996 25.3327 37.2996Z" stroke="#EADFB1" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M34.6667 18.6331H29.3333C28.597 18.6331 28 19.23 28 19.9664V25.2997C28 26.0361 28.597 26.6331 29.3333 26.6331H34.6667C35.403 26.6331 36 26.0361 36 25.2997V19.9664C36 19.23 35.403 18.6331 34.6667 18.6331Z" stroke="#EADFB1" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M22.666 37.2996V33.2996C22.666 32.946 22.8065 32.6069 23.0565 32.3568C23.3066 32.1068 23.6457 31.9663 23.9993 31.9663H39.9993C40.353 31.9663 40.6921 32.1068 40.9422 32.3568C41.1922 32.6069 41.3327 32.946 41.3327 33.2996V37.2996" stroke="#EADFB1" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M32 31.9664V26.6331" stroke="#EADFB1" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  ),
+  Value: ({ size = 64, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="64" height="64" rx="32" fill="#D4AF37" fill-opacity="0.1" />
+      <path d="M19.6005 29.9495C19.3018 30.248 19.0648 30.6023 18.9031 30.9924C18.7414 31.3825 18.6582 31.8006 18.6582 32.2229C18.6582 32.6451 18.7414 33.0632 18.9031 33.4533C19.0648 33.8434 19.3018 34.1978 19.6005 34.4962L29.7205 44.6162C30.019 44.9149 30.3733 45.1519 30.7634 45.3136C31.1535 45.4753 31.5716 45.5585 31.9939 45.5585C32.4161 45.5585 32.8342 45.4753 33.2243 45.3136C33.6144 45.1519 33.9688 44.9149 34.2672 44.6162L44.3872 34.4962C44.6859 34.1978 44.9229 33.8434 45.0846 33.4533C45.2463 33.0632 45.3295 32.6451 45.3295 32.2229C45.3295 31.8006 45.2463 31.3825 45.0846 30.9924C44.9229 30.6023 44.6859 30.248 44.3872 29.9495L34.2672 19.8295C33.9688 19.5308 33.6144 19.2938 33.2243 19.1321C32.8342 18.9704 32.4161 18.8872 31.9939 18.8872C31.5716 18.8872 31.1535 18.9704 30.7634 19.1321C30.3733 19.2938 30.019 19.5308 29.7205 19.8295L19.6005 29.9495Z" stroke="#EADFB1" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  ),
+  Global: ({ size = 64, ...props }: IconProps) => (
+    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="64" height="64" rx="32" fill="#D4AF37" fill-opacity="0.1" />
+      <path d="M31.9993 45.7995C39.3631 45.7995 45.3327 39.8299 45.3327 32.4661C45.3327 25.1023 39.3631 19.1328 31.9993 19.1328C24.6356 19.1328 18.666 25.1023 18.666 32.4661C18.666 39.8299 24.6356 45.7995 31.9993 45.7995Z" stroke="#EADFB1" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M31.9993 19.1328C28.5757 22.7277 26.666 27.5018 26.666 32.4661C26.666 37.4305 28.5757 42.2046 31.9993 45.7995C35.423 42.2046 37.3327 37.4305 37.3327 32.4661C37.3327 27.5018 35.423 22.7277 31.9993 19.1328Z" stroke="#EADFB1" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M18.666 32.4663H45.3327" stroke="#EADFB1" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+    </svg>
+  ),
 }
 

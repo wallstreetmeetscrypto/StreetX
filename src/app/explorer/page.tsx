@@ -5,12 +5,13 @@ import { Table, TableHeader, TableColumn, TableBody, TableRow, TableCell, Image 
 import { Select, SelectItem } from "@heroui/react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Layout from "@/components/Layout/layout";
 
 const ExplorerPage = () => {
 
   const tokenData = [
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -21,7 +22,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -32,7 +33,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -43,7 +44,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -54,7 +55,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -65,7 +66,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -76,7 +77,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -87,7 +88,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -98,7 +99,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -109,7 +110,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -120,7 +121,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -131,7 +132,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -142,7 +143,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -153,7 +154,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -164,7 +165,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -175,7 +176,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -186,7 +187,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -197,7 +198,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -208,7 +209,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -219,7 +220,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -230,7 +231,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -241,7 +242,7 @@ const ExplorerPage = () => {
       holders: 200
     },
     {
-      id:112,
+      id: 112,
       name: "Bitcoin",
       symbol: "btc",
       icon: "https://s2.coinmarketcap.com/static/img/coins/64x64/1.png",
@@ -260,47 +261,48 @@ const ExplorerPage = () => {
     { key: 2, label: "Market Cap" },
   ]
 
-  const handleRedirect = (id: number)=>{
+  const handleRedirect = (id: number) => {
     router.push(`/explorer/${id}`)
   }
 
 
   return (
-    <div className={`flex flex-col gap-8 w-full ${Custom.section} mx-auto bg-dark-200 rounded-3xl`}>
-      <div className="flex flex-col items-start">
-        <h3>Token Explorer</h3>
-        <p className={`${Custom.desc}`}>Browse and discover top tokens across various categories</p>
-      </div>
-
-      <div className="flex justify-between flex-col lg:flex-row items-start">
-        {/* Filter category */}
-        <div className="flex">
-          <FilterCategory />
+    <Layout>
+      <div className={`flex flex-col gap-8 w-full ${Custom.section} mx-auto bg-dark-200 rounded-3xl`}>
+        <div className="flex flex-col items-start">
+          <h3>Token Explorer</h3>
+          <p className={`${Custom.desc}`}>Browse and discover top tokens across various categories</p>
         </div>
-        <Select
-          classNames={{
-            label: "group-data-[filled=true]:-translate-y-5 bg-dark-200",
-            trigger: "min-h-12",
-            listboxWrapper: "max-h-[400px]",
-            base: "max-w-[150px]",
-          }}>
-          {filterItems.map((filterItem: any) => (
-            <SelectItem key={filterItem.key} className="bg-dark-200">{filterItem.label}</SelectItem>
-          ))}
-        </Select>
-      </div>
-      <Table aria-label="Example static collection table">
-        <TableHeader>
-          <TableColumn>Token</TableColumn>
-          <TableColumn>Price</TableColumn>
-          <TableColumn>Volume 24h</TableColumn>
-          <TableColumn>Market Cap</TableColumn>
-          <TableColumn align="end">Holders</TableColumn>
-        </TableHeader>
-        <TableBody className="">
-          {
-            tokenData.map((token) => (
-                <TableRow key="1" className="border border-dark-50/10 my-1 rounded-xl cursor-pointer" onClick={()=>handleRedirect(token.id)}> 
+
+        <div className="flex justify-between flex-col lg:flex-row items-start">
+          {/* Filter category */}
+          <div className="flex">
+            <FilterCategory />
+          </div>
+          <Select
+            classNames={{
+              label: "group-data-[filled=true]:-translate-y-5 bg-dark-200",
+              trigger: "min-h-12",
+              listboxWrapper: "max-h-[400px]",
+              base: "max-w-[150px]",
+            }}>
+            {filterItems.map((filterItem: any) => (
+              <SelectItem key={filterItem.key} className="bg-dark-200">{filterItem.label}</SelectItem>
+            ))}
+          </Select>
+        </div>
+        <Table aria-label="Example static collection table">
+          <TableHeader>
+            <TableColumn>Token</TableColumn>
+            <TableColumn>Price</TableColumn>
+            <TableColumn>Volume 24h</TableColumn>
+            <TableColumn>Market Cap</TableColumn>
+            <TableColumn align="end">Holders</TableColumn>
+          </TableHeader>
+          <TableBody className="">
+            {
+              tokenData.map((token) => (
+                <TableRow key="1" className="border border-dark-50/10 my-1 rounded-xl cursor-pointer" onClick={() => handleRedirect(token.id)}>
                   <TableCell className="">
                     <div className="flex items-center gap-2">
                       <Image src="https://s2.coinmarketcap.com/static/img/coins/64x64/1.png" width={30} />
@@ -320,11 +322,12 @@ const ExplorerPage = () => {
                   <TableCell>${token.marketcap}B</TableCell>
                   <TableCell align="right">{token.holders}M</TableCell>
                 </TableRow>
-            ))
-          }
-        </TableBody>
-      </Table>
-    </div>
+              ))
+            }
+          </TableBody>
+        </Table>
+      </div>
+    </Layout>
   )
 }
 
