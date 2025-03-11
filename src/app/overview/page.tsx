@@ -61,16 +61,20 @@ const OverviewPage = () => {
   return (
     <div className="min-h-screen px-4 lg:px-8 xl:px-12 flex flex-col items-center gap-6">
       <div className={`${Custom.section} mx-auto  rounded-3xl flex flex-col items-center gap-12`}>
-        <div className="py-12">
+        <div className="py-12 flex gap-2 items-center">
+          <Icons.GoldRocket />
           <h1 className="text-2xl lg:text-5xl 2xl:text-6xl font-bold">Welcome to <span className={`${Custom.goldgradient} `}>StreetX</span></h1>
         </div>
-        <p className="text-center">The Next Evolution of <span className={`${Custom.goldgradient}`}>Solana ICOs</span> Is Here. Pump Fun Was Just the Beginning. Now, It's Time to Think Bigger.</p>
+        <p className="text-center font-semibold">The Next Evolution of <span className={`${Custom.goldgradient}`}>Solana ICOs</span> Is Here. Pump Fun Was Just the Beginning. Now, It's Time to Think Bigger.</p>
         <div className="relative p-8 flex items-center flex-col bg-dark-200 xl:w-3/5 w-10/12 z-0">
           <div className="w-8 h-8 bg-gold-300 -translate-x-[1px] -translate-y-[1px] absolute left-0 top-0 "></div>
           <div className="w-8 h-8 bg-gold-300 -translate-x-[1px] translate-y-[1px] absolute left-0 bottom-0 "></div>
           <div className="w-8 h-8 bg-gold-300 translate-x-[1px] -translate-y-[1px] absolute right-0 top-0 "></div>
           <div className="w-8 h-8 bg-gold-300 translate-x-[1px] translate-y-[1px] absolute right-0 bottom-0 "></div>
           <div className="left-0 absolute right-0 top-0 bottom-0 bg-dark-200">
+          </div>
+          <div className="absolute right-0 top-0 -translate-y-1/2 rotate-12 translate-x-1/2">
+            <Icons.GoldChart />
           </div>
           <div className="flex z-0 flex-col gap-4">
             <p>You've seen the meme token hype—fast mints, quick pumps, even quicker dumps.</p>
