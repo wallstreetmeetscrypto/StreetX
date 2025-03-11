@@ -65,7 +65,7 @@ const OverviewPage = () => {
           <Icons.GoldRocket />
           <h1 className="text-2xl lg:text-5xl 2xl:text-6xl font-bold">Welcome to <span className={`${Custom.goldgradient} `}>StreetX</span></h1>
         </div>
-        <p className="text-center font-semibold">The Next Evolution of <span className={`${Custom.goldgradient}`}>Solana ICOs</span> Is Here. Pump Fun Was Just the Beginning. Now, It's Time to Think Bigger.</p>
+        <p className="text-center font-semibold">The Next Evolution of <span className={`${Custom.goldgradient}`}>Solana ICOs</span> Is Here. <br />💰  Pump Fun Was Just the Beginning.<br /> 📈 Now, It's Time to Think Bigger.</p>
         <div className="relative p-8 flex items-center flex-col bg-dark-200 xl:w-3/5 w-10/12 z-0">
           <div className="w-8 h-8 bg-gold-300 -translate-x-[1px] -translate-y-[1px] absolute left-0 top-0 "></div>
           <div className="w-8 h-8 bg-gold-300 -translate-x-[1px] translate-y-[1px] absolute left-0 bottom-0 "></div>
@@ -77,9 +77,8 @@ const OverviewPage = () => {
             <Icons.GoldChart />
           </div>
           <div className="flex z-0 flex-col gap-4">
-            <p>You've seen the meme token hype—fast mints, quick pumps, even quicker dumps.</p>
-            <p>But what if you could still flip tokens, still trade fast, but with actual value?
-              What if you could be early to digital IPOs for the biggest names in sports, music, and tech?</p>
+            <p className="italic">🃏 You’ve seen the meme token hype—fast mints, quick pumps, even quicker dumps.</p>
+            <p className="italic">💡 But what if you could still flip tokens, still trade fast, but with actual value? What if you could be early to digital IPOs for the biggest names in sports, music, and pop culture?</p>
             <p className={`${Custom.goldgradient} font-bold text-xl text-center`}>That's StreetX</p>
           </div>
         </div>
@@ -91,12 +90,12 @@ const OverviewPage = () => {
           <p className={`${Custom.goldgradient} font-semibold text-center`}>WHY StreetX?</p>
         </div>
         <h3 className="text-2xl lg:text-3xl font-bold  text-center">
-          The Smarter Alternative to Pump.Fun
+          🔥 The Smarter Alternative to Pump.Fun 🔥 
         </h3>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200 pt-1 rounded-2xl rounded-b-3xl">
             <div className="flex flex-col rounded-2xl p-6 bg-dark-200">
-              <h5 className="font-semibold text-xl">Trade Smarter</h5>
+              <h5 className="font-semibold text-xl">Trade Smarter 🧠 </h5>
               <p className="mt-2">✅ Stop flipping garbage and start flipping
                 assets with potential. The best
                 collectibles won't stay unminted forever.</p>
@@ -104,13 +103,13 @@ const OverviewPage = () => {
           </div>
           <div className="bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200 pt-1 rounded-2xl rounded-b-3xl">
             <div className="flex flex-col rounded-2xl p-6 bg-dark-200 h-full">
-              <h5 className="font-semibold text-xl">Still Fast</h5>
+              <h5 className="font-semibold text-xl"> Still Fast ⚡ </h5>
               <p className="mt-2">✅ Still fast, still fun—just with bigger upside. First movers always win in this space.</p>
             </div>
           </div>
           <div className="bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200 pt-1 rounded-2xl rounded-b-3xl">
             <div className="flex flex-col rounded-2xl p-6 bg-dark-200">
-              <h5 className="font-semibold text-xl">Bigger Upside</h5>
+              <h5 className="font-semibold text-xl"> Bigger Upside 📈</h5>
               <p className="mt-2">✅ Imagine minting Sam Altman before
                 OpenAI's trillion-dollar IPO or the next
                 NBA superstar before they went pro.</p>
@@ -139,16 +138,16 @@ const OverviewPage = () => {
             {
               data.map((item, idx) => (
                 <TableRow key={idx} className="my-1 rounded-2xl cursor-pointer">
-                  <TableCell className="rounded-2xl whitespace-nowrap">
+                  <TableCell className={`py-4 font-extrabold border-x-2 whitespace-nowrap border-gold-200 bg-gold-100/2 first:border-t-gold-200 ${idx === 0 ? "border-t-2" : ""} ${idx === data.length - 1 ? "border-b-2" : ""}`}>
                     <div className="">{item.feature}
                     </div>
                   </TableCell>
-                  <TableCell>
-                    <div className="flex flex-col">
+                  <TableCell className={`py-4 font-extrabold border-x-2 border-gold-200 bg-gold-100/5 first:border-t-gold-200 ${idx === 0 ? "border-t-2" : ""} ${idx === data.length - 1 ? "border-b-2" : ""}`}>
+                    <div className="flex flex-col ">
                       {item.pump}
                     </div>
                   </TableCell>
-                  <TableCell className={`py-4 font-bold border-x-2 border-gold-200 bg-gold-100/10 first:border-t-gold-200 ${idx === 0 ? "border-t-2" : ""} ${idx === data.length - 1 ? "border-b-2" : ""}`}>
+                  <TableCell className={`py-4 font-extrabold border-x-4 border-gold-300 bg-gold-100/10 first:border-t-gold-200 ${idx === 0 ? "border-t-4" : ""} ${idx === data.length - 1 ? "border-b-4" : ""}`}>
                     <div className="flex flex-col text-start">
                       {item.streetx}
                     </div>
