@@ -57,7 +57,7 @@ const OverLayModal: FC = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col px-8 gap-2 sm:gap-8">
+              <div className="flex flex-col px-8 gap-2 sm:gap-4">
                 <ActionButton className="flex-1" name="🔥 Mint an ICO Now" onClick={closeOverlayModal} />
                 <ActionButton className="flex-1" name="⚡ Trade Collectibles" onClick={closeOverlayModal} />
               </div>
