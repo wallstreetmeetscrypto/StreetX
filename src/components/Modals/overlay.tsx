@@ -36,11 +36,11 @@ const OverLayModal: FC = () => {
               <p className="text-center">
                 🚀<span className={`${Custom.goldgradient} text-xl`}>StreetX</span> is the first exchange to launch <br /> Initial Collectible Offerings (ICOs)
               </p>
-              <p className="text-center">💰 Trade, Collect, and Profit <br/> 📈 All on a Bonding Curve.</p>
+              <p className="text-center">🔥 Be the First to Own a Legendary Digital Collectible!</p>
 
               <div className="sm:px-8 flex flex-col sm:gap-2 ">
                 <div>
-                  <p >✅<span className={`${Custom.goldgradient} font-bold`}> Step 1</span>: Pick a Token or Mint Your Own</p>
+                  <p >✅<span className={`${Custom.goldgradient} font-bold`}> Step 1</span>: Pick a Token or Mint Your Own in Seconds!</p>
                   <p className="">🎯 Choose a trending collectible or launch your own in seconds.</p>
                 </div>
                 <div>
@@ -57,7 +57,7 @@ const OverLayModal: FC = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row px-8 gap-2 sm:gap-8">
+              <div className="flex flex-col px-8 gap-2 sm:gap-8">
                 <ActionButton className="flex-1" name="🔥 Mint an ICO Now" onClick={closeOverlayModal} />
                 <ActionButton className="flex-1" name="⚡ Trade Collectibles" onClick={closeOverlayModal} />
               </div>

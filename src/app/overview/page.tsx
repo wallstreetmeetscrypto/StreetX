@@ -24,7 +24,7 @@ const OverviewPage = () => {
     {
       feature: "What Can You Mint?",
       pump: "Any name, no real world tie",
-      streetx: "Icons like Sam Altamn, Shohei Ohtani, or Taylor Swift 🎤"
+      streetx: "Icons like  Sam Altman with Elon Musk, or Taylor Swift 🎤"
     },
     {
       feature: "Can You Launch Digital IPOs for Future Stars?",
