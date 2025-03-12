@@ -34,18 +34,18 @@ const OverLayModal: FC = () => {
               <p className="text-center font-bold text-xl">🔥 How it Works 🔥</p>
               <p className="text-center"> 🚀 Mint, Trade & Collect Digital Assets</p>
               <p className="text-center">
-                🚀<span className={`${Custom.goldgradient} text-xl`}>StreetX</span> is the first exchange to offer <br /> Initial Collectible Offerings (ICOs)
+                🚀<span className={`${Custom.goldgradient} text-xl`}>StreetX</span> is the first exchange to launch <br /> Initial Collectible Offerings (ICOs)
               </p>
               <p className="text-center">💰 Trade, Collect, and Profit <br/> 📈 All on a Bonding Curve.</p>
 
               <div className="sm:px-8 flex flex-col sm:gap-2 ">
                 <div>
                   <p >✅<span className={`${Custom.goldgradient} font-bold`}> Step 1</span>: Pick a Token or Mint Your Own</p>
-                  <p className="">🎯 Choose a trending collectible or launch your own i seconds.</p>
+                  <p className="">🎯 Choose a trending collectible or launch your own in seconds.</p>
                 </div>
                 <div>
                   <p >✅<span className={`${Custom.goldgradient} font-bold`}>Step 2</span>: Buy on the Bonding Curve</p>
-                  <p className="">📊 The more people buy, the higher the price goes - get in early.</p>
+                  <p className="">📈 Prices Rise as More People Buy! Get in Early for Maximum Gains!</p>
                 </div>
                 <div>
                   <p >✅<span className={`${Custom.goldgradient} font-bold`}>Step 3</span>: Sell or Hold for Gains</p>
@@ -58,8 +58,8 @@ const OverLayModal: FC = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row px-8 gap-2 sm:gap-8">
-                <ActionButton className="flex-1" name="Mint Now" onClick={closeOverlayModal} />
-                <ActionButton className="flex-1" name="Trade Now" onClick={closeOverlayModal} />
+                <ActionButton className="flex-1" name="🔥 Mint an ICO Now" onClick={closeOverlayModal} />
+                <ActionButton className="flex-1" name="⚡ Trade Collectibles" onClick={closeOverlayModal} />
               </div>
             </ModalBody>
             <ModalFooter className="">
