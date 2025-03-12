@@ -176,7 +176,7 @@ const OverviewPage = () => {
             </div>
             <div className="flex flex-col rounded-2xl bg-dark-200">
               <h5 className={`font-semibold text-xl ${Custom.goldgradient}`}>🏆  Emphasizes exclusivity</h5>
-              <p className="mt-2">💡 Imagine getting early access to the digital identity of rising stars before they reach global fame. The earlier you mint, the greater your potential returns.</p>
+              <p className="mt-2">💡 Imagine getting early access to the digital collectibles of rising stars before they reach global fame. The earlier you mint, the greater your potential returns.</p>
             </div>
           </div>
           <div className="relative rounded-2xl bg-dark-200 rounded-b-3xl flex flex-col items-center p-6 gap-6">
@@ -200,7 +200,7 @@ const OverviewPage = () => {
             </div>
             <div className="flex flex-col rounded-2xl bg-dark-200">
               <h5 className={`font-semibold text-xl ${Custom.goldgradient}`}>📈  Expanding opportunities</h5>
-              <p className="mt-2">💡 global superstar before they reach mainstream. Expand your portfolio with digital assets that have real world connections.</p>
+              <p className="mt-2">💡 global superstar before they reach mainstream. Expand your portfolio with digital assets linked to real-world figures.</p>
             </div>
           </div>
         </div>
@@ -231,7 +231,7 @@ const OverviewPage = () => {
             <div className="bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200 pt-1 rounded-2xl rounded-b-3xl">
               <div className="flex flex-col rounded-2xl p-6 bg-dark-200 h-full">
                 <h5 className="font-semibold text-xl"> 📊 Financial market-related</h5>
-                <p className="mt-2">🔵 Instead of gambling on tokens that go to zero, build a portfolio of high- potential digital assets.</p>
+                <p className="mt-2">🔵 Forget gambling on meme coins-build a high-value portfolio of digital collectibles</p>
               </div>
             </div>
           </div>
