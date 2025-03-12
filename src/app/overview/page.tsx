@@ -16,11 +16,11 @@ const OverviewPage = () => {
       pump: "Any random meme token 🤡",
       streetx: "A digital collectible (ICO) for sports, music, business, and cultural icons 🌍"
     },
-    {
-      feature: "Launch Process",
-      pump: "Instant, but Chaotic",
-      streetx: "A digital collectible (ICO) for sports, music, business, and cultural icons 📊"
-    },
+    // {
+    //   feature: "Launch Process",
+    //   pump: "Instant, but Chaotic",
+    //   streetx: "Structured ICO - 1B total tokens (10% sold at launch) 📊"
+    // },
     {
       feature: "What Can You Mint?",
       pump: "Any name, no real world tie",
@@ -32,8 +32,8 @@ const OverviewPage = () => {
       streetx: "✅ Yes - Be first to mint and up-and-coming athlete, artist, or entrepeneur"
     },
     {
-      feature: "Price Mechanics",
-      pump: "Pumps & Dumps",
+      feature: "Market Mechanics",
+      pump: "❌ Pumps & Dumps",
       streetx: "✅ Bonding Curve ensures steady price increases as demand grows 📈"
     },
     {
@@ -44,17 +44,17 @@ const OverviewPage = () => {
     {
       feature: "Verification System",
       pump: "❌ None - Anyone can copy a name",
-      streetx: "✅ Yes - Celebrities, brands & organization can officially claim tokens 🔒"
+      streetx: "✅ Yes - Athletes, celebrities and organizations can officially claim tokens 🔒"
     },
     {
       feature: "Passive Growth?",
       pump: "❌ No - You must keep flipping",
-      streetx: "✅ Yes - Buy & hold valuable collectible as their market grows 💎"
+      streetx: "✅ Yes - Mint ICO, buy & hold collectibles as their market grows 💎"
     },
     {
       feature: "Bring Friends?",
       pump: "❌ No reason to invite others",
-      streetx: "✅ Yes - The more people buy, the more valuable your collectible become 💡"
+      streetx: "✅ Yes - The more people buy, the more valuable your collectible becomes 💡"
     },
   ]
 
@@ -138,16 +138,16 @@ const OverviewPage = () => {
             {
               data.map((item, idx) => (
                 <TableRow key={idx} className="my-1 rounded-2xl cursor-pointer">
-                  <TableCell className={`py-4 font-extrabold border-x-2 whitespace-nowrap border-gold-200 bg-gold-100/2 first:border-t-gold-200 ${idx === 0 ? "border-t-2" : ""} ${idx === data.length - 1 ? "border-b-2" : ""}`}>
+                  <TableCell className={`py-4 border-x-2 whitespace-nowrap border-gold-200 bg-gold-100/2 first:border-t-gold-200 ${idx === 0 ? "border-t-2" : ""} ${idx === data.length - 1 ? "border-b-2" : ""}`}>
                     <div className="">{item.feature}
                     </div>
                   </TableCell>
-                  <TableCell className={`py-4 font-extrabold border-x-2 border-gold-200 bg-gold-100/5 first:border-t-gold-200 ${idx === 0 ? "border-t-2" : ""} ${idx === data.length - 1 ? "border-b-2" : ""}`}>
+                  <TableCell className={`py-4 border-x-2 border-gold-200 bg-gold-100/5 first:border-t-gold-200 ${idx === 0 ? "border-t-2" : ""} ${idx === data.length - 1 ? "border-b-2" : ""}`}>
                     <div className="flex flex-col ">
                       {item.pump}
                     </div>
                   </TableCell>
-                  <TableCell className={`py-4 font-extrabold border-x-4 border-gold-300 bg-gold-100/10 first:border-t-gold-200 ${idx === 0 ? "border-t-4" : ""} ${idx === data.length - 1 ? "border-b-4" : ""}`}>
+                  <TableCell className={`py-4 border-x-4 border-gold-300 bg-gold-100/10 first:border-t-gold-200 ${idx === 0 ? "border-t-4" : ""} ${idx === data.length - 1 ? "border-b-4" : ""}`}>
                     <div className="flex flex-col text-start">
                       {item.streetx}
                     </div>
@@ -175,7 +175,7 @@ const OverviewPage = () => {
               <Icons.Dot />
             </div>
             <div className="flex flex-col rounded-2xl bg-dark-200">
-              <h5 className={`font-semibold text-xl ${Custom.goldgradient}`}>Early Access Matters</h5>
+              <h5 className={`font-semibold text-xl ${Custom.goldgradient}`}>🏆  Emphasizes exclusivity</h5>
               <p className="mt-2">💡 Imagine getting early access to the digital identity of rising stars before they reach global fame. The earlier you mint, the greater your potential returns.</p>
             </div>
           </div>
@@ -187,7 +187,7 @@ const OverviewPage = () => {
               <Icons.Dot />
             </div>
             <div className="flex flex-col rounded-2xl bg-dark-200 h-full">
-              <h5 className={`font-semibold text-xl ${Custom.goldgradient}`}>Future Value Proposition</h5>
+              <h5 className={`font-semibold text-xl ${Custom.goldgradient}`}>🚀  Growth & future gains</h5>
               <p className="mt-2">💡 What if you could have minted Sam Altman before OpenAI's trillion-dollar valuation? StreetX makes investing in digital identities as simple as buying a token.</p>
             </div>
           </div>
@@ -199,7 +199,7 @@ const OverviewPage = () => {
               <Icons.Dot />
             </div>
             <div className="flex flex-col rounded-2xl bg-dark-200">
-              <h5 className={`font-semibold text-xl ${Custom.goldgradient}`}>Global Market Reach</h5>
+              <h5 className={`font-semibold text-xl ${Custom.goldgradient}`}>📈  Expanding opportunities</h5>
               <p className="mt-2">💡 global superstar before they reach mainstream. Expand your portfolio with digital assets that have real world connections.</p>
             </div>
           </div>
@@ -217,20 +217,20 @@ const OverviewPage = () => {
           <div className="grid grid-cols-1 gap-8 basis-1/2 w-full">
             <div className="bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200 pt-1 rounded-2xl rounded-b-3xl">
               <div className="flex flex-col rounded-2xl p-6 bg-dark-200 h-full">
-                <h5 className="font-semibold text-xl">Mint High-Value Collectibles</h5>
+                <h5 className="font-semibold text-xl">🎟️ Exclusive access</h5>
                 <p className="mt-2">🔵 Get in before they go mainstream and secure your position
                   in thedigital collectibles market.</p>
               </div>
             </div>
             <div className="bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200 pt-1 rounded-2xl rounded-b-3xl">
               <div className="flex flex-col rounded-2xl p-6 bg-dark-200 h-full">
-                <h5 className="font-semibold text-xl">Invest In Icons</h5>
+                <h5 className="font-semibold text-xl">🏅 Valuable digital assets</h5>
                 <p className="mt-2">🔵 Not just memes – invest in digital assets with real-world connections to rising stars in every field.</p>
               </div>
             </div>
             <div className="bg-gradient-to-r from-gold-200 via-gold-100 to-gold-200 pt-1 rounded-2xl rounded-b-3xl">
               <div className="flex flex-col rounded-2xl p-6 bg-dark-200 h-full">
-                <h5 className="font-semibold text-xl">Trade Digital IPOs</h5>
+                <h5 className="font-semibold text-xl"> 📊 Financial market-related</h5>
                 <p className="mt-2">🔵 Instead of gambling on tokens that go to zero, build a portfolio of high- potential digital assets.</p>
               </div>
             </div>
