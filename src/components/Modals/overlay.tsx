@@ -31,12 +31,14 @@ const OverLayModal: FC = () => {
             <ModalHeader className="flex flex-col gap-1 items-center">
             </ModalHeader>
             <ModalBody className=" font-bold">
-              <p className="text-center font-bold text-xl">🔥 How it Works 🔥</p>
-              <p className="text-center"> 🚀 Mint, Trade & Collect Digital Assets</p>
-              <p className="text-center">
-                🚀<span className={`${Custom.goldgradient} text-xl`}>StreetX</span> is the first exchange to launch <br /> Initial Collectible Offerings (ICOs)
-              </p>
-              <p className="text-center">🔥 Be the First to Own a Legendary Digital Collectible!</p>
+                <p className="text-center font-bold text-xl">🔥 How it Works 🔥</p>
+              <div>
+                <p className="text-center"> 🚀 Mint, Trade & Collect Digital Assets</p>
+                <p className="text-center">
+                  <span className={`${Custom.goldgradient} text-xl`}>StreetX</span> is the first exchange to launch <br /> Initial Collectible Offerings (ICOs)
+                </p>
+              </div>
+              <p className="text-center">🔥 Be the First to Own a Legendary Collectible Token!</p>
 
               <div className="sm:px-8 flex flex-col sm:gap-2 ">
                 <div>
@@ -54,7 +56,7 @@ const OverLayModal: FC = () => {
               </div>
 
               <div className="flex flex-col px-8 gap-2 sm:gap-4">
-                <ActionButton className="flex-1" name="🔥 Mint an ICO Now" onClick={closeOverlayModal} />
+                <ActionButton className="flex-1" name="🚀 Mint an ICO Now" onClick={closeOverlayModal} />
                 <ActionButton className="flex-1" name="⚡ Trade Collectibles" onClick={closeOverlayModal} />
               </div>
             </ModalBody>
