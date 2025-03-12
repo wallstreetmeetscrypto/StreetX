@@ -38,20 +38,21 @@ const OverLayModal: FC = () => {
                   <span className={`${Custom.goldgradient} text-xl`}>StreetX</span> is the first exchange to launch <br /> Initial Collectible Offerings (ICOs)
                 </p>
               </div>
-              <p className="text-center">🔥 Be the First to Own a Legendary Collectible Token!</p>
+              <p className="text-center">🔥 Be the First to Own <br/>  
+                <span className="whitespace-nowrap">Legendary Collectible Token!</span></p>
 
               <div className="sm:px-8 flex flex-col sm:gap-2 ">
                 <div>
-                  <p >✅<span className={`${Custom.goldgradient} font-bold`}> Step 1</span>: Pick a Trending Collectible or Mint Your Own in Seconds!</p>
+                  <p >✅<span className={`${Custom.goldgradient} font-bold`}> Step 1</span>: Pick a Trending Collectible or Mint Your Own in Seconds! 🎨</p>
                 </div>
                 <div>
-                  <p >✅<span className={`${Custom.goldgradient} font-bold`}>Step 2</span>: Buy on the Bonding Curve - Prices Rise as More People Buy!</p>
+                  <p >✅<span className={`${Custom.goldgradient} font-bold`}>Step 2</span>: Buy on the Bonding Curve - Prices Rise as More People Buy! 📈</p>
                 </div>
                 <div>
-                  <p >✅<span className={`${Custom.goldgradient} font-bold`}>Step 3</span>: Sell for Profit or Hold Rare Collectibles for Long-Term Gains</p>
+                  <p >✅<span className={`${Custom.goldgradient} font-bold`}>Step 3</span>: Sell for Profit or Hold Rare Collectibles for Long-Term Gains 💰</p>
                 </div>
                 <div>
-                  <p >✅<span className={`${Custom.goldgradient} font-bold`}>Step 4</span>: Verified Collectibles with AI-Generated Art - Claim yours Now!</p>
+                  <p >✅<span className={`${Custom.goldgradient} font-bold`}>Step 4</span>: Verified Collectibles with AI-Generated Art - Claim yours Now! ✅</p>
                 </div>
               </div>
 
